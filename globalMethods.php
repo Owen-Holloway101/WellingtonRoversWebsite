@@ -1,5 +1,4 @@
 <head>
-	<title>Welly Rovers [infdev]</title>
 	<link rel="stylesheet" type="text/css" href="/mainStyles.css">
 </head>
 
