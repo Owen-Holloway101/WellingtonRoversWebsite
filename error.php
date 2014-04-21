@@ -4,13 +4,13 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/globalMethods.php';
 ?>
 
 <head>
-	<title>Welly Rover Crew - Home</title>
+	<title>Error :/</title>
 </head>
 
 <body>
 	<div class="backingBox">
-		<div class="content">
-		This is some test text on the homepage!
+		<div class="content" style="text-align: center;">
+		You have been sent here because an error ocurred ....
 		</div>
 	</div>
 </body>
