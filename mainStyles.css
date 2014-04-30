@@ -48,9 +48,13 @@ div.nav {
 	width: 15%;
 }
 
+span.navButton {
+	
+}
+
 div.navClose {
-	height: 0vh;
-	width: 0wv;
+	height: 0px;
+	width: 0px;
 }
 
 

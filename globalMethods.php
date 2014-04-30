@@ -1,6 +1,6 @@
 <head>
-	<link rel="stylesheet" type="text/css" media="(min-device-width: 800px)" href="/mainStyles.css">
-	<link rel="stylesheet" type="text/css" media="(max-device-width: 799px)" href="/mobileStyles.css">
+	<link rel="stylesheet" type="text/css"  href="/mainStyles.css">
+	
 	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 	<script type="text/javascript">
 
