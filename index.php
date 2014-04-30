@@ -8,9 +8,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/globalMethods.php';
 </head>
 
 <body>
-	<div class="backingBox">
-		<div class="content">
-		This is some test text on the homepage!
-		</div>
+	<div class="content">
+	This is some test text on the homepage!
 	</div>
 </body>
