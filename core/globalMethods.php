@@ -17,7 +17,7 @@
 </body>
 
 <?php
-//Owen HOlloway, Welly Rover Crew, 2014
+//Owen Holloway, Welly Rover Crew, 2014
 error_reporting(-1);
 //echo "<!--Global Methods included-->"; //debug
 
