@@ -1,9 +1,0 @@
-#Owen Holloway (Zeryt)
-#remove dead files
-git ls-files --deleted | xargs git rm
-
-#add files to stage with patterns
-find . -name '*.php' -print | xargs git add
-
-#commit changes
-git commit
