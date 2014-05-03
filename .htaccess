@@ -1,0 +1,5 @@
+ErrorDocument 404 /404.php
+DefaultType application/x-httpd-php
+
+# Use PHP 5.4
+AddHandler application/x-httpd-php55 .php

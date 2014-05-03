@@ -9,6 +9,6 @@
 </div>
 
 <div class="nav">
-	<span onclick="location.href='/'" class="navButton">Home</span>
+	<span onclick="location.href='/index.php'" class="navButton">Home</span>
 	<span onclick="location.href='http://www.facebook.com/WellingtonRovers'" class="navButton">Facebook</span>
 </div>
