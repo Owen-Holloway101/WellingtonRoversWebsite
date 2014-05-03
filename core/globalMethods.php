@@ -10,7 +10,7 @@ error_reporting(-1);
 <head>
 	<link rel="stylesheet" type="text/css" media="screen and (min-width: 920px)"href="/core/mainStyles.css">
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 919px)" href="/core/mobileStyles.css" /> <!--This line will dynamic change on desktop version-->
-	<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 919px)" href="/csstest/mobileStyles.css" />
+	<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 919px)" href="/core/mobileStyles.css" />
 	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 	<script type="text/javascript">
 
