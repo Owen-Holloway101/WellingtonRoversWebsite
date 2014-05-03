@@ -2,7 +2,8 @@ body {
 	background: #2110D2;
 	text-align: center;
 	vertical-align: middle;
-
+	padding: 0px;
+	margin: 0px;
 	margin-top: 65px;
 	font-family: Sans-serif;
 }
@@ -100,4 +101,41 @@ div.content {
 	margin-right: 1%;
 	margin-bottom: 10px;
 	padding: 10px;
+}
+
+button {
+	background: #3D4548;
+	color: #ffffff;
+	/* Box */
+	border: 0px;
+	border-bottom: 2px solid #3D4548;
+	box-shadow: 0px 1px 5px 0px #000000;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+button:hover {
+	border-bottom: 2px solid #2310EA;
+	cursor: pointer;
+}
+button:active {
+	box-shadow: 0px 0px 2px 0px #000000;
+	outline: 0;
+}
+
+button:visited {
+	outline: none;
+}
+
+
+/*a cheap way of making froala look like the rest of the site */
+div.froala-editor.f-basic {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
 }
