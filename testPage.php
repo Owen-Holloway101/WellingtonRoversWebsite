@@ -7,6 +7,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 	<title>Welly Rover Crew - Test Page</title>
 	<script type="text/javascript">
 		$(".headerBar").append(" - Test Page");
+		setPage("/testPage.php");
 	</script>
 	<link href="/froala/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -38,8 +39,6 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 	<iframe frameBorder="0" src="http://www.google.com/calendar/embed?src=welly%40tasrovers.com" style="width: 100%; height: 500px;"></iframe>
 </div>
 
-<!--
-
 <div class="content">
 	<div id="edit">
 		
@@ -56,5 +55,4 @@ echo "<div class=\"content\">
 }
 ?>
 
--->
 </body>

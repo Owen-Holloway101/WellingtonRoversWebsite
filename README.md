@@ -9,7 +9,7 @@ TODO
 
 Permissions:
 
-0
+0  not logged in 
 10 default (can view top level, not much else)
 20 
 30 inactive crew member (can view/reply to most of site)

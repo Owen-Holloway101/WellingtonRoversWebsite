@@ -8,7 +8,25 @@
 	Wellington Rover Crew
 </div>
 
+<div class="login">
+	<form action="/core/login.php" method="post">
+		User: <input type="text"     name="user"><br>
+		Pass: <input type="password" name="pass"><br>
+		<input type="submit">
+	</form>
+</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="nav">
 	<span onclick="location.href='/index.php'" class="navButton">Home</span>
-	<span onclick="location.href='http://www.facebook.com/WellingtonRovers'" class="navButton">Facebook</span>
+	<span onclick="location.href='/calendar.php'" class="navButton">Calendar</span>
+	<div class="fb-like-box" data-href="https://www.facebook.com/WellingtonRovers" data-width="218" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="true"></div>
 </div>
