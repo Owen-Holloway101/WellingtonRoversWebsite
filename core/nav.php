@@ -8,14 +8,6 @@
 	Wellington Rover Crew
 </div>
 
-<div class="login">
-	<form action="/core/login.php" method="post">
-		User: <input type="text"     name="user"><br>
-		Pass: <input type="password" name="pass"><br>
-		<input type="submit">
-	</form>
-</div>
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];

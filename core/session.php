@@ -5,17 +5,16 @@ ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
 */
-error_reporting(0);
 
 $userPermission = 0;
 
 function getUserName($sessionID) {
 
-	include $_SERVER["DOCUMENT_ROOT"].'/core/userConnect.php';
-
-	$user = "null";
+	include $_SERVER["DOCUMENT_ROOT"].'/core/dbConnect.php';
 
 	$query = "SELECT ID, USER FROM SESSION";
+
+	$uname = "null";
 
 	if ($stmt = $db->prepare($query)) {
 
@@ -39,12 +38,9 @@ function getUserName($sessionID) {
 	}
 }
 
-$userName = getUserName($_COOKIE["sessionID"]);
-
-
 function getUserPermission($user) {
 
-	include $_SERVER["DOCUMENT_ROOT"].'/core/userConnect.php';
+	include $_SERVER["DOCUMENT_ROOT"].'/core/dbConnect.php';
 
 	$userPermission = 0;
 
@@ -73,6 +69,11 @@ function getUserPermission($user) {
 
 }
 
-$userPermission = getUserPermission($userName);
-
+if (isset($_COOKIE['session'])) {
+	$userName = getUserName($_COOKIE["session"]);
+	$userPermission = getUserPermission($userName);
+} else {
+	$userName = "null";
+	$userPermission = 0;
+}
 ?>

@@ -25,6 +25,5 @@ if (userExists($_POST['user'])) {
 		window.location.href=<?php echo $COOKIE["page"]; setcookie("page","",time()-36000);?>
 	</script>
 	-->
-	test
 </body>
 </html>

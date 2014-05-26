@@ -1,9 +1,13 @@
 <?php
 //Owen Holloway, Welly Rover Crew, 2014
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
 error_reporting(-1);
 //echo "<!--Global Methods included-->"; //debug
 
 //This is the file that stores all the global methods, requires and includes
+
+include $_SERVER['DOCUMENT_ROOT']."/core/session.php";
 
 ?>
 <!DOCTYPE html>
@@ -56,4 +60,19 @@ error_reporting(-1);
 	<?php
 	require_once $_SERVER["DOCUMENT_ROOT"].'/core/nav.php';
 	?>
+
+	<div class="login">
+	<?php
+	if ($userName == "null") {
+		echo "	<form action=\"/core/login.php\" method=\"post\">
+					User: <input type=\"text\"     name=\"user\"><br>
+					Pass: <input type=\"password\" name=\"pass\"><br>
+					<input type=\"submit\">
+				</form>";
+	} else {
+		echo $userName;
+	}
+	?>
+	</div>
+
 </body>
