@@ -6,6 +6,9 @@ ini_set('display_startup_errors',1);
 error_reporting(-1);
 //echo "<!--Global Methods included-->"; //debug
 
+//FAR OUT STOP GIVING ME ERRORS!!! Have your stupid timezone crap if you must.
+date_default_timezone_set("Australia/Hobart");
+
 //This is the file that stores all the global methods, requires and includes
 
 include $_SERVER['DOCUMENT_ROOT']."/core/session.php";
