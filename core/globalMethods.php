@@ -71,12 +71,12 @@ function errorHandle($description) {
 	<?php
 	if ($userName == "null") {
 		echo "	<form action=\"/core/login.php\" method=\"post\">
-					User: <input type=\"text\"     name=\"user\"><br>
-					Pass: <input type=\"password\" name=\"pass\"><br>
-					<input type=\"submit\">
+					User: <input class=\"text\" type=\"text\"     name=\"user\"><br>
+					Pass: <input class=\"text\" type=\"password\" name=\"pass\"><br>
+					<input class=\"button\" type=\"submit\" value=\"login\">
 				</form>";
 	} else {
-		echo $userName;
+		echo "Logged in as: ".$userName."<br>";
 		echo "<button onclick=\"location.href='/core/logout.php'\">logout</button>";
 	}
 	?>
