@@ -7,20 +7,14 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/forum/forumCore.php';
 <head>
 	<title>Welly Rover Crew - Home</title>
 	<script type="text/javascript">
-		$(".headerBar").append(" - Forum");
-		setPage("forum");
+		$(".headerBar").append(" - Error");
+		setPage("index");
 	</script>
 </head>
 
 <body>
-<div class="content">
-	<div class="postBase">
-		<div class="titleBox">
-			this is a test
-		</div>
-		<div class="subjectBox">
-			this is a test
-		</div>
-	</div>	
-</div>
+	<div class="content">
+	<h3>An error has occurred :/</h3>
+	Error description: <?php echo $_COOKIE["error"]; setcookie("error","",time()-36000,"/");?>
+	</div>
 </body>

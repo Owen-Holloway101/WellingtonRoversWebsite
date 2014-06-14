@@ -9,12 +9,18 @@ error_reporting(-1);
 
 include $_SERVER['DOCUMENT_ROOT']."/core/session.php";
 
+function errorHandle($description) {
+	setcookie("error",$description,time()+36000,"/");
+	echo "<script type=\"text/javascript\">window.location.href = \" http://\"+window.location.hostname+\"/"."error.php"."\"</script>";
+}
+
 ?>
 <!DOCTYPE html>
 <head>
-	<link rel="stylesheet" type="text/css" media="screen and (min-width: 700px)"href="/core/mainStyles.css">
-	<link rel="stylesheet" type="text/css" media="screen and (max-width: 699px)" href="/core/mobileStyles.css" /> <!--This line will dynamic change on desktop version-->
-	<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 699px)" href="/core/mobileStyles.css" />
+	<link rel="stylesheet" type="text/css" href="/core/mainStyles.css">
+	<!-- <link rel="stylesheet" type="text/css" media="only screen and (device-width : 801px)" href="/core/mainStyles.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" media="only screen and (device-width : 800px)" href="/core/mobileStyles.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" media="only screen and (max-device-width : 1200px) and (max-device-height : 1920px)" href="/core/mobileStyles.css" /> -->
 	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 	<script type="text/javascript">
 
@@ -49,7 +55,7 @@ include $_SERVER['DOCUMENT_ROOT']."/core/session.php";
 	function setPage(pageFile) {
 		var expDate = new Date();
 		expDate.setTime(expDate.getTime()+(60*15));
-		document.cookie="page=" + pageFile + ";" + expDate;
+		document.cookie="page=" + pageFile + ";" + expDate + "; path=/";
 	}
 
 	</script>
@@ -71,6 +77,7 @@ include $_SERVER['DOCUMENT_ROOT']."/core/session.php";
 				</form>";
 	} else {
 		echo $userName;
+		echo "<button onclick=\"location.href='/core/logout.php'\">logout</button>";
 	}
 	?>
 	</div>

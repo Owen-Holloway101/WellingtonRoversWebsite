@@ -2,3 +2,4 @@
 <?php
 require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 ?>
+<link rel="stylesheet" type="text/css" href="/forum/forumStyles.css">

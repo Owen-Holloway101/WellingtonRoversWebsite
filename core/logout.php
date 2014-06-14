@@ -16,4 +16,8 @@ $stmt->execute();
 $stmt->close();
 
 setcookie('session','',-3600,'/');
+
+echo "<script type=\"text/javascript\">window.location.href = \" http://\"+window.location.hostname+\"/".$_COOKIE["page"]."\"</script>";
+
+setcookie("page","",time()-36000,"/");
 ?>
