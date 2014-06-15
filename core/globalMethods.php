@@ -1,6 +1,10 @@
 <?php
 //Owen Holloway, Welly Rover Crew, 2014
 //@Zeryter
+
+//FAR OUT STOP GIVING ME ERRORS!!! Have your stupid timezone crap if you must.
+date_default_timezone_set("Australia/Hobart");
+
 ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
@@ -23,9 +27,6 @@ if (!isset($_COOKIE["useMobileSite"])) {
 		$_COOKIE["useMobileSite"] = "false";
 	}
 }
-
-//FAR OUT STOP GIVING ME ERRORS!!! Have your stupid timezone crap if you must.
-date_default_timezone_set("Australia/Hobart");
 
 //This is the file that stores all the global methods, requires and includes
 
