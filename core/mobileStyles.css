@@ -27,8 +27,8 @@ div.headerBar {
 	background: #1E2224;
 	line-height: 110px;
 	color: #BEBEBE;
-	font-size: 28px;
-	padding-left: 220px;
+	font-size: 48px;
+	padding-left: 180px;
 	text-align: left;
 	box-shadow: 0px 0px 5px 0px #000000;
 	/* Position */
@@ -43,7 +43,7 @@ div.nav {
 	z-index: 990;
 	background: #2E3436;
 	box-shadow: 0px 0px 5px 0px #000000;
-	padding-top: 65px;
+	padding-top: 110px;
 	/*position*/
 	position: fixed;
 	top: 0px;
@@ -53,30 +53,29 @@ div.nav {
 	visibility: hidden;
 }
 
+div.navOpen {
+	visibility: visible;
+}
+
 span.navButton {
 	background: #343A3D;
-	height: 20px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 60px;
 	color: #BEBEBE;
 	width: calc(100% - 30px);
-	line-height: 22px;
 	margin-left: 10px; 
 	margin-right: 10px;
 	display: inline-block;
 	padding: 5px;
 	border-bottom: 4px solid #3D4548;
-	margin-bottom: 8px;
+	margin-top: 20px;
 }
 
 span.navButton:hover {
 	border-bottom: 4px solid #2310EA;
 	cursor: pointer;
 }
-
-div.navClose {
-	height: 0px;
-	width: 0px;
-}
-
 
 div.overflow {
 	z-index: 1010;
@@ -90,6 +89,8 @@ div.overflow {
 }
 
 div.login {
+	width: 0px;
+	height: 0px;
 	visibility: hidden;
 }
 
@@ -98,7 +99,7 @@ div.login {
 div.content {
 	background: #E8E8E8;
 	text-align: left;
-
+	font-size: 34px;
 	border: 4px solid #3D4548;
 	/*width: 80%;*/
 	margin-left: calc(1%);

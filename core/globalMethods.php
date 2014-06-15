@@ -1,10 +1,30 @@
 <?php
 //Owen Holloway, Welly Rover Crew, 2014
 //@Zeryter
+/*
 ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
+*/
 //echo "<!--Global Methods included-->"; //debug
+
+//The setup for mobile detection, its like magic :D
+require_once $_SERVER['DOCUMENT_ROOT'].'/core/Mobile-Detect/Mobile_Detect.php';
+$detect = new Mobile_Detect;
+
+if (!isset($_COOKIE["useMobileSite"])) {
+	if ($detect->isMobile()) {
+		//This will epxire in 10 years ... which is plenty of time!
+		setcookie("useMobileSite","true",time() + (10 * 365 * 24 * 60 * 60),"/");
+		$_COOKIE["useMobileSite"] = "true";
+	} else if ($detect->isTablet()) {
+		setcookie("useMobileSite","true",time() + (10 * 365 * 24 * 60 * 60),"/");
+		$_COOKIE["useMobileSite"] = "true";
+	} else {
+		setcookie("useMobileSite","false",time() + (10 * 365 * 24 * 60 * 60),"/");
+		$_COOKIE["useMobileSite"] = "false";
+	}
+}
 
 //FAR OUT STOP GIVING ME ERRORS!!! Have your stupid timezone crap if you must.
 date_default_timezone_set("Australia/Hobart");
@@ -21,7 +41,13 @@ function errorHandle($description) {
 ?>
 <!DOCTYPE html>
 <head>
-	<link rel="stylesheet" type="text/css" href="/core/mainStyles.css">
+	<?php
+	if ($_COOKIE["useMobileSite"] == "true") {
+		echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"/core/mobileStyles.css\"/>";
+	} else {
+		echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"/core/mainStyles.css\">";
+	}
+	?>
 	<!-- <link rel="stylesheet" type="text/css" media="only screen and (device-width : 801px)" href="/core/mainStyles.css"> -->
 	<!-- <link rel="stylesheet" type="text/css" media="only screen and (device-width : 800px)" href="/core/mobileStyles.css"> -->
 	<!-- <link rel="stylesheet" type="text/css" media="only screen and (max-device-width : 1200px) and (max-device-height : 1920px)" href="/core/mobileStyles.css" /> -->

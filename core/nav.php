@@ -1,5 +1,11 @@
 <div class="background">
 
+<script type="text/javascript">
+	function toggleNav() {
+			$(".nav").toggleClass("navOpen");
+		}
+</script>
+
 </div>
 	<div class="headerBar">
 	<div onclick="toggleNav();" class="overflow">
