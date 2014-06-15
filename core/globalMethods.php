@@ -4,10 +4,7 @@
 
 //FAR OUT STOP GIVING ME ERRORS!!! Have your stupid timezone crap if you must.
 date_default_timezone_set("Australia/Hobart");
-
-ini_set('display_errors',1);
-ini_set('display_startup_errors',1);
-error_reporting(-1);
+error_reporting(0);
 //echo "<!--Global Methods included-->"; //debug
 
 //The setup for mobile detection, its like magic :D
