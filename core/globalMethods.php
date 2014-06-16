@@ -81,10 +81,32 @@ function errorHandle($description) {
 		document.cookie="page=" + pageFile + ";" + expDate + "; path=/";
 	}
 
+	function getCookie(cname) {
+		var name = cname + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0; i<ca.length; i++) {
+			var c = ca[i].trim();
+			if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+		}
+		return "";
+	}
+
 	function setMobile(value) {
 		var expDate = new Date();
 		expDate.setTime(expDate.getTime()+(10 * 365 * 24 * 60 * 60));
 		document.cookie="useMobileSite=" + value + ";" + expDate + "; path=/";
+		location.reload();
+	}
+
+	function toggleMobile() {
+		var expDate = new Date();
+		expDate.setTime(expDate.getTime()+(10 * 365 * 24 * 60 * 60));
+		if (getCookie("useMobileSite") == "true") {
+			document.cookie="useMobileSite=" + "false" + ";" + expDate + "; path=/";
+		} else {
+			document.cookie="useMobileSite=" + "true" + ";" + expDate + "; path=/";
+		}
+		location.reload();
 	}
 
 	</script>

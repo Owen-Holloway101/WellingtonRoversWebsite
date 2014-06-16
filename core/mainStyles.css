@@ -217,6 +217,20 @@ div.froala-editor.f-basic {
 div.fb-like-box {
 	background: #E8E8E8;
 	border: 1px solid #3D4548;
+	border-bottom: none;
+	position: fixed;
+	bottom: 40px;
+	left: 0px;
+}
+
+/*The nav settings box this is here because its near and similar to the fb-like-box*/
+
+div.navSettings {
+	background: #E8E8E8;
+	border: 1px solid #3D4548;
+	border-top: none;
+	height: 40px;
+	width: 218px;
 	position: fixed;
 	bottom: 0px;
 	left: 0px;

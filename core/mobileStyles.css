@@ -53,10 +53,6 @@ div.nav {
 	visibility: hidden;
 }
 
-div.navOpen {
-	visibility: visible;
-}
-
 span.navButton {
 	background: #343A3D;
 	height: 80px;
@@ -110,9 +106,12 @@ div.content {
 
 button {
 	background: #3D4548;
-	color: #ffffff;
+	color: #BEBEBE;
 	/* Box */
 	border: 0px;
+	line-height: 34px;
+	font-size: 34px;
+	width: calc(100% - 30px);
 	border-bottom: 2px solid #3D4548;
 	box-shadow: 0px 1px 5px 0px #000000;
 	padding-top: 6px;
@@ -153,4 +152,24 @@ div.fb-like-box {
 	bottom: 0px;
 	left: 0px;
 	visibility: hidden;
+}
+
+/*The nav settings box this is here because its near and similar to the fb-like-box*/
+
+div.navSettings {
+	background: #E8E8E8;
+	border: 1px solid #3D4548;
+	border-top: none;
+	height: 60px;
+	width: 75%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	visibility: hidden;
+}
+
+/*toggle classes*/
+
+div.navOpen {
+	visibility: visible;
 }
