@@ -95,13 +95,73 @@ div.login {
 div.content {
 	background: #E8E8E8;
 	text-align: left;
-	font-size: 34px;
+	font-size: 44px;
 	border: 4px solid #3D4548;
 	/*width: 80%;*/
 	margin-left: calc(1%);
 	margin-right: calc(1%);
 	margin-bottom: 10px;
 	padding: 10px;
+}
+
+input.button {
+	background: #343A3D;
+	color: #BEBEBE;
+	height: 80px;
+	width: calc(100% - 10px);
+	line-height: 80px;
+	font-size: 80px;
+	display: inline-block;
+	/* Box */
+	border: 0px;
+	border-bottom: 2px solid #3D4548;
+	box-shadow: 0px 0px 0px 0px #000000;
+	padding: 10px;
+	padding-top: 20px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 40px;
+}
+
+input.button:hover {
+	border-bottom: 2px solid #2310EA;
+	cursor: pointer;
+}
+
+input.button:active {
+	box-shadow: 0px 0px 0px 0px #000000;
+	outline: 0;
+}
+
+input.text {
+	/* wrapping */
+	background: #2E3436;
+	color: #FFFFFF;
+	border: none;
+	border-bottom: 8px solid #3D4548;
+	height: 80px;
+	font-size: 80px;
+	line-height: 80px;
+	width: calc(100% - 18px);
+	/* padding etc ... */
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+input.text:hover {
+	border-bottom: 2px solid #2310EA;
+	cursor: text;
+}
+
+input.text:focus{
+	border-bottom: 2px solid #E30002;
+	cursor: text;
+	outline: 0;
 }
 
 button {

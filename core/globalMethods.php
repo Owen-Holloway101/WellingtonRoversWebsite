@@ -36,6 +36,15 @@ function errorHandle($description) {
 
 ?>
 <!DOCTYPE html>
+<!--
+Owen Holloway, Wellington Rover Crew 2014
+@Zeryter
+
+Project source code can be viewed at: https://github.com/Owen-Holloway101/WellingtonRoversWebsite
+along with all commit logs and builds
+
+If you are reading this and want to submit a bug: https://github.com/Owen-Holloway101/WellingtonRoversWebsite/issues/new 
+will get you what you want -->
 <head>
 	<?php
 	if ($_COOKIE["useMobileSite"] == "true") {
@@ -44,10 +53,6 @@ function errorHandle($description) {
 		echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"/core/mainStyles.css\">";
 	}
 	?>
-
-	<!-- <link rel="stylesheet" type="text/css" media="only screen and (device-width : 801px)" href="/core/mainStyles.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" media="only screen and (device-width : 800px)" href="/core/mobileStyles.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" media="only screen and (max-device-width : 1200px) and (max-device-height : 1920px)" href="/core/mobileStyles.css" /> -->
 	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 	<script type="text/javascript">
 
@@ -107,6 +112,10 @@ function errorHandle($description) {
 			document.cookie="useMobileSite=" + "true" + ";" + expDate + "; path=/";
 		}
 		location.reload();
+	}
+
+	function bugReport() {
+		location.href="https://github.com/Owen-Holloway101/WellingtonRoversWebsite/issues/new";
 	}
 
 	</script>

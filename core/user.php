@@ -108,6 +108,27 @@ function insertNewUser($user, $pass) {
 
 }
 
+function updateUserPass($user, $pass) {
+
+	//This inserts a new user into the system with the pass $pass, it also salts the password
+	require $_SERVER['DOCUMENT_ROOT']."/core/dbConnect.php";
+
+	//This is only needed for php <5.5
+	require $_SERVER['DOCUMENT_ROOT'].'/core/password_compat-master/lib/password.php';
+
+	$options = array('cost' => 11);
+	$passHash = password_hash($pass, PASSWORD_BCRYPT, $options);
+
+	$stmt = $db->prepare("UPDATE 'USERS' SET 'SPASS'=? WHERE 'UNAME'=?");
+
+	$stmt->bind_param("ss",$passHash,$user);
+
+	$stmt->execute();
+
+	$stmt->close();
+
+}
+
 //Session mainipulation 
 function deleteSession($sessionID) {
 	
