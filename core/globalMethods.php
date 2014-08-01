@@ -31,7 +31,7 @@ include $_SERVER['DOCUMENT_ROOT']."/core/session.php";
 
 function errorHandle($description) {
 	setcookie("error",$description,time()+36000,"/");
-	echo "<script type=\"text/javascript\">window.location.href = \" http://\"+window.location.hostname+\"/"."error.php"."\"</script>";
+	echo "<script type=\"text/javascript\">window.location.href = \" http://\"+window.location.host+\"/"."error.php"."\"</script>";
 }
 
 ?>
