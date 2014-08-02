@@ -7,7 +7,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 	<title>Welly Rover Crew - Home</title>
 	<script type="text/javascript">
 		$(".headerBar").append(" - New User");
-		setPage("user/newUser.php");
+		setPage("user");
 	</script>
 </head>
 
