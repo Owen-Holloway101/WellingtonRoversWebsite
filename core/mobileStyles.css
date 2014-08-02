@@ -211,6 +211,8 @@ div.fb-like-box {
 	position: fixed;
 	bottom: 0px;
 	left: 0px;
+	height: 0px; 
+	width: 0px;
 	visibility: hidden;
 }
 
