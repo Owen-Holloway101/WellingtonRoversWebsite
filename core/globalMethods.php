@@ -53,9 +53,9 @@ will get you what you want -->
 		echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"/core/mainStyles.css\">";
 	}
 	?>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
 	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 	<script type="text/javascript">
-	<meta name="viewport" content="width=device-width, user-scalable=no" />
 	
 	function postToUrl(path, params, method) {
 		method = method || "post"; // Set method to post by default if not specified.
