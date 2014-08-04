@@ -163,7 +163,7 @@ input.text:focus{
 	cursor: text;
 	outline: 0;
 }
-/*
+
 button {
 	background: #3D4548;
 	color: #BEBEBE;
@@ -195,7 +195,7 @@ button:active {
 button:visited {
 	outline: none;
 }
-*/
+
 /*a cheap way of making froala look like the rest of the site */
 div.froala-editor.f-basic {
 	padding-left: 5px;
