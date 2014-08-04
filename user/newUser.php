@@ -20,8 +20,8 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 		<form action="/core/newUser.php" method="post" id="userform">
 			<input type="text"     placeholder="username" name="user" class="text"><br>
 			<input type="password" placeholder="password" name="pass" class="text"><br>
-			<input type="password" placeholder="confirmpassword" name="passConfirmsu" class="text"><br>
-			<input onclick="submitForm()" class="button">
+			<input type="password" placeholder="confirmpassword" name="passConfirmsu" class="text"><t id="promtText"></t><br>
+			<input type="button"   onclick="submitForm()" class="button">
 		</form>
 	</div>
 </body>
