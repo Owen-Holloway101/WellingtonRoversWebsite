@@ -10,7 +10,13 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 		setPage("user");
 
 		function submitForm () {
-			document.getElementById("userform").submit();
+			var passInit = document.getElementById("passInit").value;
+			var passCheck = document.getElementById("passCheck").value;
+			if (passInit == passCheck) {
+				document.getElementById("userform").submit();
+			} else {
+				$("#promtText").text("<- needs to be the same as password");
+			}
 		}
 	</script>
 	<style>
@@ -23,8 +29,8 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 <body>
 	<div class="content">
 		<form action="/core/newUser.php" method="post" id="userform">
-			<input type="text"     placeholder="username" name="user" class="text"><br>
-			<input type="password" placeholder="password" name="pass" class="text"><br>
+			<input type="text"     placeholder="username" name="user" class="text" id="passInit"><br>
+			<input type="password" placeholder="password" name="pass" class="text" id="passCheck"><br>
 			<input type="password" placeholder="confirmpassword" name="passConfirmsu" class="text"><t id="promtText"></t><br>
 			<input type="button"   onclick="submitForm()" value="submit" class="button">
 		</form>
