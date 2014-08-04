@@ -154,12 +154,12 @@ input.text {
 }
 
 input.text:hover {
-	border-bottom: 2px solid #2310EA;
+	border-bottom: 8px solid #2310EA;
 	cursor: text;
 }
 
 input.text:focus{
-	border-bottom: 2px solid #E30002;
+	border-bottom: 8px solid #E30002;
 	cursor: text;
 	outline: 0;
 }
