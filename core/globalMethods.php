@@ -53,7 +53,7 @@ will get you what you want -->
 		echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"/core/mainStyles.css\">";
 	}
 	?>
-	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 	<script type="text/javascript">
 	
