@@ -13,6 +13,11 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 			document.getElementById("userform").submit();
 		}
 	</script>
+	<style>
+	div.login{
+		visibility: hidden;
+	}
+	</style>
 </head>
 
 <body>
