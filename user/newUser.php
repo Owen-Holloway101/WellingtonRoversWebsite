@@ -12,7 +12,10 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 			var passInit = document.getElementById("passInit").value;
 			var passCheck = document.getElementById("passCheck").value;
 			if (passInit == passCheck) {
-				document.getElementById("userform").submit();
+				//document.getElementById("userform").submit();
+				console.log("pass equal");
+				console.log(passInit);
+				console.log(passCheck);
 			} else {
 				$("#promtText").text("<- needs to be the same as password");
 			}
