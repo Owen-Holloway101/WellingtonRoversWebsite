@@ -9,10 +9,14 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 	$(".headerBar").append(" - User");
 	setPage("user");
 	</script>
+	<style>
+	div.login{
+		visibility: hidden;
+	}
+	</style>
 </head>
 
 <body>
 	<div id="content">
-	
 	</div>
 </body>

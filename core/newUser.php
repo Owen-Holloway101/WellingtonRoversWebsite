@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT']."/core/user.php";
 if (userExists($_POST['user'])) {
 	echo "User already exists";
 } else {
-	echo "New user";
+	//TODO add in user created success page
 	echo "<script type=\"text/javascript\">window.location.href = \" http://\"+window.location.host+\"/".$_COOKIE["page"]."\"</script>";
 	insertNewUser($_POST['user'],$_POST['pass']);
 }
@@ -15,10 +15,5 @@ if (userExists($_POST['user'])) {
 
 <html>
 <body>
-	<!--
-	<script type="text/javascript">
-		window.location.href=<?php echo $COOKIE["page"]; setcookie("page","",time()-36000);?>
-	</script>
-	-->
 </body>
 </html>
