@@ -167,10 +167,10 @@ input.text:focus{
 button {
 	background: #3D4548;
 	color: #BEBEBE;
-	//Box
+
 	border: 0px;
-	line-height: 34px;
-	font-size: 34px;
+	line-height: 50px;
+	font-size: 50px;
 	width: calc(100% - 30px);
 	border-bottom: 2px solid #3D4548;
 	box-shadow: 0px 1px 5px 0px #000000;
