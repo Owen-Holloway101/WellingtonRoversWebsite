@@ -1,5 +1,10 @@
 <?php
 //Database checks and inserts 
+
+/*
+Checks if user exists
+*/
+
 function userExists($user) {
 
 	//This is a check for if the user exists, 
@@ -36,6 +41,10 @@ function userExists($user) {
 		}	
 	}
 }
+
+/*
+If the salt is correct the user has provided the correct password
+*/
 
 function checkSalt($user, $pass) {
 
@@ -87,6 +96,10 @@ function checkSalt($user, $pass) {
 	}
 }
 
+/*
+Inserts a new user into the DB complete with hashed password
+*/
+
 function insertNewUser($user, $pass) {
 
 	//This inserts a new user into the system with the pass $pass, it also salts the password
@@ -107,6 +120,10 @@ function insertNewUser($user, $pass) {
 	$stmt->close();
 
 }
+
+/*
+changes a users password
+*/
 
 function updateUserPass($user, $pass) {
 
@@ -130,6 +147,11 @@ function updateUserPass($user, $pass) {
 }
 
 //Session mainipulation 
+
+/*
+destroy a session (security etc)
+*/
+
 function deleteSession($sessionID) {
 	
 	include $_SERVER["DOCUMENT_ROOT"].'/core/dbConnect.php';
@@ -144,6 +166,10 @@ function deleteSession($sessionID) {
 	$stmt->close();
 
 }
+
+/*
+A user needs a session to be able to use the site
+*/
 
 function setSession($user, $sessionID) {
 	
@@ -171,6 +197,10 @@ function setSession($user, $sessionID) {
 
 	$stmt->close();
 }
+
+/*
+Makes a random string to be used as session id
+*/
 
 function generateSessionID() {
 	$length = 32;

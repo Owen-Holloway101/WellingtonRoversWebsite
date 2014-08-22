@@ -16,7 +16,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 </head>
 
 <body>
-	<div class="content">
+	<div class="content.form">
 	<button onclick="location.href='/user/login.php'"		>Login</button><br>
 	<button onclick="location.href='/user/newUser.php'"		>New User</button><br>
 	<button onclick="location.href='/user/changePass.php'"	>Change User</button></div>
