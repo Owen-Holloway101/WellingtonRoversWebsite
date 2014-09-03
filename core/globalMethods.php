@@ -57,6 +57,10 @@ will get you what you want -->
 	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 	<script type="text/javascript">
 	
+	/*
+	will submit data to a php form 
+	*/
+
 	function postToUrl(path, params, method) {
 		method = method || "post"; // Set method to post by default if not specified.
 
@@ -81,21 +85,19 @@ will get you what you want -->
 		form.submit();
 	}
 
+	/*
+	Sets the last page cookie, this is useful for post login etc
+	*/
+
 	function setPage(pageFile) {
 		var expDate = new Date();
 		expDate.setTime(expDate.getTime()+(60*15));
 		document.cookie="page=" + pageFile + ";" + expDate + "; path=/";
 	}
 
-	function getCookie(cname) {
-		var name = cname + "=";
-		var ca = document.cookie.split(';');
-		for(var i=0; i<ca.length; i++) {
-			var c = ca[i].trim();
-			if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
-		}
-		return "";
-	}
+	/*
+	Set the site to display as mobile. Peple use smartphones, this lets them use smartphones.
+	*/
 
 	function setMobile(value) {
 		var expDate = new Date();
@@ -115,6 +117,10 @@ will get you what you want -->
 		location.reload();
 	}
 
+	/*
+	Yeah its a link ... I don't care
+	*/
+
 	function bugReport() {
 		location.href="https://github.com/Owen-Holloway101/WellingtonRoversWebsite/issues/new";
 	}
@@ -130,6 +136,11 @@ will get you what you want -->
 
 	<div class="login">
 	<?php
+
+	/*
+	The login box, this is sometimes hidden and is also not avaliable to mobile users 
+	*/
+
 	if ($userName == "null") {
 		echo "	<form action=\"/core/login.php\" method=\"post\">
 					User: <input class=\"text\" type=\"text\"     name=\"user\"><br>
