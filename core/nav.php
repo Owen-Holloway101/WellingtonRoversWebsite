@@ -28,6 +28,7 @@
 <div class="nav">
 	<span onclick="location.href='/'" class="navButton">Home</span>
 	<span onclick="location.href='/calendar'" class="navButton">Calendar</span>
+	<span onclick="location.href='/links'" class="navButton">Links</span>
 	<div class="fb-like-box" data-href="https://www.facebook.com/WellingtonRovers" data-width="218" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="true"></div>
 	<div class="navSettings"><button onclick="toggleMobile()">Toggle Mobile Site</button></div>
 </div>
