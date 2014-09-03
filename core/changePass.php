@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(-1);
 //Lets add in the user functions from the user file
 require_once $_SERVER['DOCUMENT_ROOT']."/core/user.php";
 include $_SERVER['DOCUMENT_ROOT'].'/core/session.php';

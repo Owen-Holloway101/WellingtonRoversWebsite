@@ -17,7 +17,10 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 
 <body>
 	<div id="content">
-		<div id="form">
-		</div>
+		<form action=\"/core/login.php\" method=\"post\">
+			Username: <input class=\"text\" type=\"text\"     name=\"user\"><br>
+			Password: <input class=\"text\" type=\"password\" name=\"pass\"><br>
+			<input class=\"button\" type=\"submit\" value=\"login\">
+		</form>
 	</div>
 </body>
