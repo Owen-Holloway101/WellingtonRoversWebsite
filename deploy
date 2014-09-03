@@ -1,6 +1,6 @@
 ./commit
 git checkout site_upload
-git tag "$(date +'[20%y%m%d]-[%H%M%S]')"-[site_upload]
+git tag "$(date +'20%y%m%d-%H%M%S')"-site_upload
 git merge master
 git checkout master
 git push origin --all
