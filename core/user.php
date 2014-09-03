@@ -136,6 +136,9 @@ function updateUserPass($user, $pass) {
 	$options = array('cost' => 11);
 	$passHash = password_hash($pass, PASSWORD_BCRYPT, $options);
 
+	var_dump($passHash);
+	var_dump($user);
+
 	$stmt = $db->prepare("UPDATE 'USERS' SET 'SPASS'=? WHERE 'UNAME'=?");
 
 	$stmt->bind_param("ss",$passHash,$user);
