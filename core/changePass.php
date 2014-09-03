@@ -9,21 +9,13 @@ function errorHandle($description) {
 	echo "<script type=\"text/javascript\">window.location.href = \" http://\"+window.location.hostname+\"/"."error.php"."\"</script>";
 }
 
-if (!isset($_COOKIE["session"])) {
-	if (userExists($_POST['user'])) {
-		if(checkSalt($_POST['user'],$_POST['pass'])) {
-			updateUserPass($_POST['user'],$_POST['newpass'])
-			echo "pass correct \n";
-			echo "<script type=\"text/javascript\">window.location.href = \" http://\"+window.location.hostname+\"/".$_COOKIE["page"]."\"</script>";
-			setcookie("page","",time()-36000,"/");
-		} else {
-			errorHandle("user does not exist or pass incorrect");
-		}
-	} else {
-		errorHandle("user does not exist or pass incorrect");
-	}
+if(isset($_COOKIE['session'])){
+	updateUserPass($userName,$_POST['pass']);
+	echo "pass correct \n";
+	echo "<script type=\"text/javascript\">window.location.href = \" http://\"+window.location.hostname+\"/".$_COOKIE["page"]."\"</script>";
+	setcookie("page","",time()-36000,"/");
 } else {
-	errorHandle("already logged in as ". $userName);
+	errorHandle("Not logged in");
 }
 ?>
 

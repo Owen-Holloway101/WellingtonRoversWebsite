@@ -1,7 +1,5 @@
 <?php
 
-$userPermission = 0;
-
 function getUserName($sessionID) {
 
 	include $_SERVER["DOCUMENT_ROOT"].'/core/dbConnect.php';
@@ -67,6 +65,7 @@ if (isset($_COOKIE['session'])) {
 	$userName = getUserName($_COOKIE["session"]);
 	$userPermission = getUserPermission($userName);
 } else {
+	//In this case the user is not logged in
 	$userName = "null";
 	$userPermission = 0;
 }

@@ -8,7 +8,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/forum/forumCore.php';
 	<title>Welly Rover Crew - Home</title>
 	<script type="text/javascript">
 		$(".headerBar").append(" - Error");
-		setPage("index");
+		setPage("index.php");
 	</script>
 </head>
 

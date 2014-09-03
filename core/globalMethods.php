@@ -2,10 +2,9 @@
 //Owen Holloway, Welly Rover Crew, 2014
 //@Zeryter
 
-//FAR OUT STOP GIVING ME ERRORS!!! Have your stupid timezone crap if you must.
 date_default_timezone_set("Australia/Hobart");
 error_reporting(0);
-//echo "<!--Global Methods included-->"; //debug
+//echo "<!--Global Methods included-->"; //TODO remove (debug this is useful)
 
 //The setup for mobile detection, its like magic :D
 require_once $_SERVER['DOCUMENT_ROOT'].'/core/Mobile-Detect/Mobile_Detect.php';
