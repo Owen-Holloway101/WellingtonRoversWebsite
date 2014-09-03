@@ -34,9 +34,9 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
   <div id="content">
   	<div class="content">
 		<form action="/core/changePass.php" method="post" id="userform">
-			<input type="text"     placeholder="username" name="user" class="text"><br>
-			<input type="password" placeholder="password" name="pass" class="text"><br>
-			<input type="password" placeholder="confirm password" name="passConfirmsu" class="text"><t id="promtText"></t><br>
+			<?echo if (isset($_COOKIE['session'])) {echo $userName;} ?>
+			<input type="password" placeholder="password" 		  name="pass" 		   class="text" id="passInit"><t id="promtText1"></t><br>
+			<input type="password" placeholder="confirm password" name="passConfirmsu" class="text" id="passCheck"><t id="promtText2"></t><br>
 			<input type="button"   onclick="submitForm()" value="submit" class="button">
 		</form>
 	</div>

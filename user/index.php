@@ -20,8 +20,8 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 		<div class="form">
 		<button onclick="location.href='/user/login.php'">Login</button><br>
 		<button onclick="location.href='/user/newUser.php'">New User</button><br>
-		<?php if ($userPermission > 0) {
-			echo "<button onclick=\"location.href='/user/changePass.php'\">Change Password</button>"
+		<?php if (isset($_COOKIE['session'])) {
+			echo "<button onclick=\"location.href='/user/changePass.php'\">Change ".$userName."'s password</button>";
 		}?>
 		</div>
 	</div>
