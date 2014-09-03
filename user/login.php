@@ -17,5 +17,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 
 <body>
 	<div id="content">
+		<div id="form">
+		</div>
 	</div>
 </body>

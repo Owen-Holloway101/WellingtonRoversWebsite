@@ -12,10 +12,10 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 			var passInit = document.getElementById("passInit").value;
 			var passCheck = document.getElementById("passCheck").value;
 			if (passInit == passCheck) {
-				//document.getElementById("userform").submit();
-				console.log("pass equal")
-				console.log(passInit)
-				console.log(passCheck)
+				console.log("pass equal");
+				console.log(passInit);
+				console.log(passCheck);
+				document.getElementById("userform").submit();
 			} else {
 				$("#promtText1").text(" <- need to be equal");
 				$("#promtText2").text(" <- need to be equal");
@@ -34,7 +34,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 		<form action="/core/newUser.php" method="post" id="userform">
 			<input type="text"     placeholder="username" name="user" class="text"><br>
 			<input type="password" placeholder="password" name="pass" class="text" id="passInit"><t id="promtText1"></t><br>
-			<input type="password" placeholder="confirmpassword" name="passConfirmsu" class="text"  id="passCheck"><t id="promtText2"></t><br>
+			<input type="password" placeholder="confirm password" name="passConfirmsu" class="text"  id="passCheck"><t id="promtText2"></t><br>
 			<input type="button"   onclick="submitForm()" value="submit" class="button">
 		</form>
 	</div>

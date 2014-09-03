@@ -7,6 +7,21 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
   <script type="text/javascript">
     $(".headerBar").append(" - Change Pass");
     setPage("user");
+
+    function submitForm () {
+		var passInit = document.getElementById("passInit").value;
+		var passCheck = document.getElementById("passCheck").value;
+		if (passInit == passCheck) {
+			console.log("pass equal");
+			console.log(passInit);
+			console.log(passCheck);
+			document.getElementById("userform").submit();
+		} else {
+			$("#promtText1").text(" <- need to be equal");
+			$("#promtText2").text(" <- need to be equal");
+		}
+	}
+
   </script>
   <style>
 	div.login{
