@@ -55,6 +55,21 @@ will get you what you want -->
 	<!--<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1" />-->
 	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 	<script type="text/javascript">
+
+	/*
+	cookie
+	*/
+
+	function getCookie(cname) {
+	    var name = cname + "=";
+	    var ca = document.cookie.split(';');
+	    for(var i=0; i<ca.length; i++) {
+	        var c = ca[i];
+	        while (c.charAt(0)==' ') c = c.substring(1);
+	        if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+	    }
+	    return "";
+	}
 	
 	/*
 	will submit data to a php form 
