@@ -12,8 +12,7 @@ function errorHandle($description) {
 if(isset($_COOKIE['session'])){
 	updateUserPass($userName,$_POST['pass']);
 	echo "pass correct \n";
-	echo "<script type=\"text/javascript\">window.location.href = \" http://\"+window.location.hostname+\"/".$_COOKIE["page"]."\"</script>";
-	setcookie("page","",time()-36000,"/");
+	echo "<script type=\"text/javascript\">window.location.href = \" http://\"+window.location.hostname+\"/"."core/logout.php"."\"</script>";
 } else {
 	errorHandle("Not logged in");
 }

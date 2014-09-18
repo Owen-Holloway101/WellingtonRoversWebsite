@@ -139,10 +139,10 @@ function updateUserPass($user, $pass) {
 	var_dump($passHash);
 	var_dump($user);
 
-	$stmt = $db->prepare("UPDATE 'USERS' SET 'SPASS'=? WHERE 'UNAME'=?");
-
+	$stmt = $db->prepare("UPDATE USERS SET SPASS=? WHERE UNAME=?");
+	echo $db->error;
 	$stmt->bind_param("ss",$passHash,$user);
-
+	
 	$stmt->execute();
 
 	$stmt->close();

@@ -16,11 +16,11 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 </head>
 
 <body>
-	<div id="content">
-		<form action=\"/core/login.php\" method=\"post\">
-			Username: <input class=\"text\" type=\"text\"     name=\"user\"><br>
-			Password: <input class=\"text\" type=\"password\" name=\"pass\"><br>
-			<input class=\"button\" type=\"submit\" value=\"login\">
+	<div class="content">
+		<form action="/core/login.php" method="post">
+			<input class="text" placeholder="Username" type="text"     name="user"><br>
+			<input class="text" placeholder="Password" type="password" name="pass"><br>
+			<input class="button" type="Submit" value="login">
 		</form>
 	</div>
 </body>
