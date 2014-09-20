@@ -23,10 +23,9 @@ Permissions:
 
 ==========================================
 
-Layout:
+How builds are formatted:
+|date| |time| |   type  |
+xxxxxx-xxxxxx-site_upload
 
-920px: min full desktop mode width;
-
-==========================================
-
-froala is used for text editing 
+date is formatted: "yymmdd"
+time is formatted: "hhmmss"
