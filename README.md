@@ -24,7 +24,7 @@ Permissions:<br>
 ==========================================<br>
 <br>
 How builds are formatted:<br>
-|date| |time| |   type  |<br>
+|date|-|time|-|---type--|<br>
 xxxxxx-xxxxxx-site_upload<br>
 <br>
 date is formatted: "yymmdd"<br>
