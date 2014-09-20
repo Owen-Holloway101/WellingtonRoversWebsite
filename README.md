@@ -1,31 +1,31 @@
-Work in progress
-
-TODO
-- get sign in and permissions system in place
-- get mobile optimsed css working 
-- get a forum working
-
-==========================================
-
-Permissions:
-
-0  not logged in 
-10 default (can view top level, not much else)
-20 
-30 inactive crew member (can view/reply to most of site)
-40
-50 crew member (can view/reply/post to most of site)
-60
-70
-80
-90
-100
-
-==========================================
-
-How builds are formatted:
-|date| |time| |   type  |
-xxxxxx-xxxxxx-site_upload
-
-date is formatted: "yymmdd"
-time is formatted: "hhmmss"
+Work in progress<br>
+<br>
+TODO<br>
+- get sign in and permissions system in place<br>
+- get mobile optimsed css working<br>
+- get a forum working<br>
+<br>
+==========================================<br>
+<br>
+Permissions:<br>
+<br>
+0  not logged in<br>
+10 default (can view top level, not much else)<br>
+20<br>
+30 inactive crew member (can view/reply to most of site)<br>
+40<br>
+50 crew member (can view/reply/post to most of site)<br>
+60<br>
+70<br>
+80<br>
+90<br>
+100<br>
+<br>
+==========================================<br>
+<br>
+How builds are formatted:<br>
+|date| |time| |   type  |<br>
+xxxxxx-xxxxxx-site_upload<br>
+<br>
+date is formatted: "yymmdd"<br>
+time is formatted: "hhmmss"<br>
