@@ -37,7 +37,6 @@ How builds are formatted:
 ```
 |date|-|time|-|---type--|
 xxxxxx-xxxxxx-site_upload
-
+```
 date is formatted: "yymmdd"
 time is formatted: "hhmmss"
-```
