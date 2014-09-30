@@ -1,6 +1,5 @@
-Work in progress
-
-TODO
+#Work in progress
+#TODO
 * Public
   * Crew info – contacts
   * Crew history
@@ -17,8 +16,14 @@ TODO
   * Old Fart Email
 
 ==========================================<br>
+
+#Frameworks Used
+*<a href="http://mobiledetect.net/">Mobile Detect</a>
+*<a href="https://travis-ci.org/ircmaxell/password_compat">Password Compact</a>
+
+==========================================<br>
 <br>
-Permissions:<br>
+#Permissions:<br>
 <br>
 0  not logged in<br>
 10 default (can view top level, not much else)<br>
