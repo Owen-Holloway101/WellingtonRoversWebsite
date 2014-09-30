@@ -2,19 +2,19 @@ Work in progress
 
 TODO
 * Public
-⋅⋅* Crew info – contacts
-⋅⋅* Crew history
-⋅⋅* Log books (reports)
-⋅⋅* News
-⋅⋅* Calendar c/ events
-⋅⋅* Visible Photos
+  * Crew info – contacts
+  * Crew history
+  * Log books (reports)
+  * News
+  * Calendar c/ events
+  * Visible Photos
 
 * Non-Public (Log in area for crew members)
-⋅⋅* Specific documents (Squire Training, Constitution)
-⋅⋅* Non-Public Photos
-⋅⋅* Trouser Snake
-⋅⋅* Welly Old Fart
-⋅⋅* Old Fart Email
+  * Specific documents (Squire Training, Constitution)
+  * Non-Public Photos
+  * Trouser Snake
+  * Welly Old Fart
+  * Old Fart Email
 
 ==========================================<br>
 <br>
