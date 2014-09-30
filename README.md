@@ -16,13 +16,13 @@ TODO
 ..*Welly Old Fart
 ..*Old Fart Email
 
-==========================================
-
-Permissions:
+==========================================<br>
 <br>
-0  not logged in <br>
+Permissions:<br>
+<br>
+0  not logged in<br>
 10 default (can view top level, not much else)<br>
-20 <br>
+20<br>
 30 inactive crew member (can view/reply to most of site)<br>
 40<br>
 50 crew member (can view/reply/post to most of site)<br>
@@ -31,13 +31,12 @@ Permissions:
 80<br>
 90<br>
 100<br>
-
-==========================================
-
-Layout:
-
-920px: min full desktop mode width;
-
-==========================================
-
-froala is used for text editing 
+<br>
+==========================================<br>
+<br>
+How builds are formatted:<br>
+|date|-|time|-|---type--|<br>
+xxxxxx-xxxxxx-site_upload<br>
+<br>
+date is formatted: "yymmdd"<br>
+time is formatted: "hhmmss"<br>
