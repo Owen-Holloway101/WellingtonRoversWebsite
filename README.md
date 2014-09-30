@@ -18,8 +18,8 @@
 ==========================================<br>
 
 #Frameworks Used
-*<a href="http://mobiledetect.net/">Mobile Detect</a>
-*<a href="https://travis-ci.org/ircmaxell/password_compat">Password Compact</a>
+* <a href="http://mobiledetect.net/">Mobile Detect</a>
+* <a href="https://travis-ci.org/ircmaxell/password_compat">Password Compact</a>
 
 ==========================================<br>
 <br>
