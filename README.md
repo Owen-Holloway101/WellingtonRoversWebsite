@@ -33,10 +33,11 @@ Permissions:<br>
 100<br>
 <br>
 ==========================================<br>
-<br>
-How builds are formatted:<br>
-|date|-|time|-|---type--|<br>
-xxxxxx-xxxxxx-site_upload<br>
-<br>
-date is formatted: "yymmdd"<br>
-time is formatted: "hhmmss"<br>
+How builds are formatted:
+```
+|date|-|time|-|---type--|
+xxxxxx-xxxxxx-site_upload
+
+date is formatted: "yymmdd"
+time is formatted: "hhmmss"
+```
