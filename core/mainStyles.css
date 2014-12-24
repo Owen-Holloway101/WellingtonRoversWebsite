@@ -126,7 +126,8 @@ input.button {
 	color: #FFFFFF;
 	border: none;
 	border-bottom: 2px solid #3D4548;
-	height: 18px;
+	height: 26px;
+	width: 157px;
 	/* padding etc ... */
 	margin-left: 2px;
 	margin-right: 2px;
@@ -134,8 +135,8 @@ input.button {
 	margin-top: 8px;
 	padding-left: 4px;
 	padding-right: 4px;
-	padding-top: 3px;
-	padding-bottom: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 input.button:hover {
