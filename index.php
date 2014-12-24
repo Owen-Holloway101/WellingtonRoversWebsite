@@ -12,6 +12,9 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 
 <body>
 	<div class="content">
-		Welly is currently getting its website redesigned!
+		Welcome to the Wellington Rover Crew home page.<br>
+		<br>
+		We are scouts aged 18 - 26
+		<br>
 	</div>
 </body>

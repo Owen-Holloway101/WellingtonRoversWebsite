@@ -12,8 +12,3 @@ if (userExists($_POST['user'])) {
 }
 
 ?>
-
-<html>
-<body>
-</body>
-</html>
