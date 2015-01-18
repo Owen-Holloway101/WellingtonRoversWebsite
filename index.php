@@ -20,7 +20,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 		We currently meet every Thursday between 8pm and 10pm although we do occasionally go over this timeframe. Our program is active with various activities to situate all Rovers and newcomers. 
 		<br>
 		<br>
-		What we do: ANZAC Day, rockclimbing, cocktail parties, iceblocking, bushwalking, camping, rafting, movie nights, abseiling, poker and casino nights, pub nights, Clean Up Australia day, four wheel driving, salsa dancing, bike rides, cooking, campcraft, swimming, moots (state, national and international Rover gatherings), costume parties, beach walks…………whatever you want really, if you want to do, then we can do it...to a certain degree, that is.
+		What we do: ANZAC Day, rockclimbing, cocktail parties, iceblocking, bushwalking, camping, rafting, movie nights, abseiling, poker and casino nights, pub nights, Clean Up Australia day, four wheel driving, salsa dancing, bike rides, cooking, campcraft, swimming, moots (state, national and international Rover gatherings), costume parties, beach walks ...... whatever you want really, if you want to do, then we can do it...to a certain degree, that is.
 		<br>
 	</div>
 </body>
