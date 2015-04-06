@@ -36,7 +36,7 @@ function errorHandle($description) {
 ?>
 <!DOCTYPE html>
 <!--
-Owen Holloway, Wellington Rover Crew 2014
+Owen Holloway, Wellington Rover Crew 2015
 @Zeryter
 
 Project source code can be viewed at: https://github.com/Owen-Holloway101/WellingtonRoversWebsite
@@ -157,8 +157,8 @@ will get you what you want -->
 
 	if ($userName == "null") {
 		echo "	<form action=\"/core/login.php\" method=\"post\">
-					User: <input class=\"text\" type=\"text\"     name=\"user\"><br>
-					Pass: <input class=\"text\" type=\"password\" name=\"pass\"><br>
+					<input class=\"text\" placeholder=\"Username\" type=\"text\"     name=\"user\"><br>
+					<input class=\"text\" placeholder=\"Password\" type=\"password\" name=\"pass\"><br>
 					<input class=\"button\" type=\"submit\" value=\"login\">
 				</form>";
 	} else {

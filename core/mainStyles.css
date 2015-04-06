@@ -1,5 +1,5 @@
 body {
-	background: #2110D2;
+	background: #00205b;
 	text-align: center;
 	vertical-align: middle;
 	padding: 0px;
@@ -16,7 +16,7 @@ div.background {
 	/* Position */
 	position: fixed;
 	border-left: 250px solid transparent;
-	border-bottom: 1500px solid #E30002;
+	border-bottom: 1500px solid #da291c;
 	right: 0px;
 	bottom: 0px; 
 	
