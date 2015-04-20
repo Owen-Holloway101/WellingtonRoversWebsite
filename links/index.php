@@ -12,6 +12,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 
 <body>
 	<div class="content">
+			<u>Public Links</u><br>
 			<a href="http://www.scouts.com.au">Scouts Australia</a><br>
 			<a href="http://www.rovers.com.au">Rovers Australia</a><br>
 			<a href="http://www.tas.scouts.com.au">Scout Tasmania</a><br>
@@ -20,12 +21,14 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 			<a href="http://www.facebook.com/WellingtonRovers">Facebook</a>
 	</div>
 
-	<div class="content">
+	
 	<?php
 	if ($userPermission >= 20) {
+		echo "<div class=\"content\">";
+		echo "<u>Private Links</u><br>"
 		echo "<a href=".$googledrivelink.">Contact List</a><br>";
+		echo "<\div>";
 	}
 	?>
-	</div>
 
 </body>
