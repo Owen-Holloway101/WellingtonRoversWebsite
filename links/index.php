@@ -30,5 +30,6 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 		//echo "<\div>";
 	}
 	?>
+	<div></div>
 
 </body>
