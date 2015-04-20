@@ -25,11 +25,10 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 	<?php
 	if ($userPermission >= 20) {
 		echo "<div class=\"content\">";
-		echo "<u>Private Links</u><br>"
-		//echo "<a href=".$googledrivelink.">Contact List</a><br>";
-		//echo "<\div>";
+		echo "<u>Private Links</u><br>";
+		echo "<a href=".$googledrivelink.">Contact List</a><br>";
+		echo "<\div>";
 	}
 	?>
-	<div></div>
 
 </body>
