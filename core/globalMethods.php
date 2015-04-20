@@ -8,6 +8,7 @@ error_reporting(0);
 
 //The setup for mobile detection, its like magic :D
 require_once $_SERVER['DOCUMENT_ROOT'].'/core/Mobile-Detect/Mobile_Detect.php';
+include $_SERVER["DOCUMENT_ROOT"].'/core/settings.private.php';
 $detect = new Mobile_Detect;
 
 if (!isset($_COOKIE["useMobileSite"])) {

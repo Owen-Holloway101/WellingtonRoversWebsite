@@ -19,4 +19,13 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 			<a href="http://www.tas.myscout.com.au">Tas MyScout</a><br>
 			<a href="http://www.facebook.com/WellingtonRovers">Facebook</a>
 	</div>
+
+	<div class="content">
+	<?php
+	if ($userPermission >= 20) {
+		echo "<a href=".$googledrivelink.">Contact List</a><br>";
+	}
+	?>
+	</div>
+
 </body>
