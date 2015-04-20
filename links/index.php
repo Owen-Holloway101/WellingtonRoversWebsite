@@ -27,6 +27,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/globalMethods.php';
 		echo "<div class=\"content\">";
 		echo "<u>Private Links</u><br>";
 		echo "<a href=".$googledrivelink.">Contact List</a><br>";
+		echo "<a href=".$googledrivephotos.">Google Photo Folder</a><br>";
 	}
 	?>
 
