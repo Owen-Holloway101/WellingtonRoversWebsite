@@ -1,26 +1,17 @@
 <?php
 
-//Lets add in the user functions from the user file
-require_once $_SERVER['DOCUMENT_ROOT']."/core/user.php";
-include $_SERVER['DOCUMENT_ROOT'].'/core/session.php';
-
-function errorHandle($description) {
-	setcookie("error",$description,time()+36000,"/");
-	echo "<script type=\"text/javascript\">window.location.href = \" http://\"+window.location.host+\"/"."error.php"."\"</script>";
-}
+require_once $_SERVER['DOCUMENT_ROOT']."/core/corefunctions.php";
 
 if (!isset($_COOKIE["session"])) {
-	if (userExists($_POST['user'])) {
-		if(checkSalt($_POST['user'],$_POST['pass'])) {
-			setSession($_POST['user'], generateSessionID());
-			echo "pass correct \n";
-			echo "<script type=\"text/javascript\">window.location.href = \" http://\"+window.location.host+\"/".$_COOKIE["page"]."\"</script>";
-			setcookie("page","",time()-36000,"/");
+	if (userExists($_POST['username'])) {
+		if(checkSalt($_POST['username'],$_POST['password'])) {
+			setSession($_POST['username'], generateSessionID());
+			messageHandle("Logged in as ".$_POST['username']);
 		} else {
-			errorHandle("user does not exist or pass incorrect 1");
+			errorHandle("user does not exist or pass incorrect");
 		}
 	} else {
-		errorHandle("user does not exist or pass incorrect 2");
+		errorHandle("user does not exist or pass incorrect");
 	}
 } else {
 	errorHandle("already logged in as ". $userName);
