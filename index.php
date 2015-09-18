@@ -22,7 +22,7 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
   
 <div class="section white">
 	<div class="row container">
-		<h2 class="header">Parallax</h2>
+		<h2 class="header">Lorem ipsum</h2>
 		<p class="grey-text text-darken-3 lighten-3">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et ipsum porttitor, mollis purus a, pellentesque turpis. Donec fringilla libero nec odio hendrerit, non fringilla tortor viverra. Aenean accumsan eros id mauris mollis porta. Maecenas ac nulla vitae turpis consequat volutpat. Integer quis dui tristique, sollicitudin nulla a, porttitor nisl. Cras risus eros, vehicula id pellentesque et, semper ac quam. Donec luctus ultrices enim congue commodo. Aenean molestie convallis risus vel dapibus. Phasellus laoreet tristique tempor.
 		<br>
@@ -56,7 +56,7 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 			<div class="col l4 offset-l2 s12">
 				<h5 class="white-text">Links</h5>
 				<ul>
-				<li><a class="grey-text text-lighten-3" href="https://github.com/owen-holloway101">GitHub</a></li>
+				<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
 				<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
 				<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
 				<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
@@ -66,7 +66,7 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 	</div>
 	<div class="footer-copyright">
 		<div class="container">
-		© 2015 Owen Holloway @Zeryter
+		© 2015 Wellington Rover Crew
 		<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
 		</div>
 	</div>
