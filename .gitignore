@@ -3,3 +3,4 @@ test
 *.private.php
 
 core/password_compat/**
+core/mobile-detect/**

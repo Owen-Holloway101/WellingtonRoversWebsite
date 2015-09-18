@@ -18,24 +18,9 @@
 ==========================================<br>
 
 #Frameworks Used
+* <a href="http://mobiledetect.net/">Mobile Detect</a>
 * <a href="https://travis-ci.org/ircmaxell/password_compat">Password Compact</a>
 
-==========================================<br>
-<br>
-#Permissions:<br>
-<br>
-0  not logged in<br>
-10 default (can view top level, not much else)<br>
-20<br>
-30 inactive crew member (can view/reply to most of site)<br>
-40<br>
-50 crew member (can view/reply/post to most of site)<br>
-60<br>
-70<br>
-80<br>
-90<br>
-100<br>
-<br>
 ==========================================<br>
 How builds are formatted:
 ```
