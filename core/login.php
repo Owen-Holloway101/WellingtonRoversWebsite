@@ -17,17 +17,12 @@ if (!isset($_COOKIE["session"])) {
 			echo "<script type=\"text/javascript\">window.location.href = \" http://\"+window.location.host+\"/".$_COOKIE["page"]."\"</script>";
 			setcookie("page","",time()-36000,"/");
 		} else {
-			errorHandle("user does not exist or pass incorrect");
+			errorHandle("user does not exist or pass incorrect 1");
 		}
 	} else {
-		errorHandle("user does not exist or pass incorrect");
+		errorHandle("user does not exist or pass incorrect 2");
 	}
 } else {
 	errorHandle("already logged in as ". $userName);
 }
 ?>
-
-<html>
-<body>
-</body>
-</html>
