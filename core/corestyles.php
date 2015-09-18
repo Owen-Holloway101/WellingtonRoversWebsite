@@ -17,16 +17,19 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
 
 	<!--The Zeryt icon-->
-	<link rel="icon" href="/assets/zeryt.ico" type="image/ico" sizes="16x16">
+	<link rel="icon" href="/assets/Shorts.ico" type="image/ico" sizes="16x16">
 
 	<!--Meterial Icons-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!--Overrides for the styles-->
+	<link rel="stylesheet" type="text/css" href="/core/styles.css"/>
 </head>
 
-<body class="teal">
+<body class="welly-blue">
 	<!--Navigation-->
 	<nav class="grey darken-3" role="navigation">
-		<div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Zeryter</a>
+		<div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Wellington Rovers</a>
 			<ul class="right hide-on-med-and-down">
 				<li><a href="/">Home</a></li>
 				<li><a href="/user">User <?php  if ($userName == "null") echo ""; else echo "(".$userName.")";?></a></li>
@@ -39,15 +42,16 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 		</div>
 		<script type="text/javascript">
+			//Enable mobile pull out menu
 			(function($){
 				$(function(){
 
 					$('.button-collapse').sideNav();
 
-			  }); // end of document ready
-			})(jQuery); // end of jQuery name space
+			  });
+			})(jQuery);
 			
-			
+			//Enable parallax
 			$(document).ready(function(){
 				$('.parallax').parallax();
 			});
