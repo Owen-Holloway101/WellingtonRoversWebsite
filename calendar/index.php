@@ -16,7 +16,7 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 
 <body class="welly-red">
 <div class="parallax-container">
-	<div class="parallax"><img src="/assets/wellydoingthings/group.jpg">
+	<div class="parallax"><img src="/assets/wellydoingthings/boat.jpg">
 	</div>
 </div>
   
@@ -27,7 +27,7 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 </div>
 
 <div class="parallax-container">
-	<div class="parallax"><img src="/assets/wellydoingthings/snow.jpg">
+	<div class="parallax"><img src="/assets/wellydoingthings/walk.jpg">
 	</div>
 </div>
 
