@@ -26,7 +26,7 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
 	<link rel="stylesheet" type="text/css" href="/core/styles.css"/>
 </head>
 
-<body class="welly-blue">
+<body>
 	<!--Navigation-->
 	<nav class="grey darken-3" role="navigation">
 		<div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Wellington Rovers</a>

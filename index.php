@@ -11,12 +11,12 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 ?>
 
 <head>
-	<title>Home</title>
+	<title>Welly - Home</title>
 </head>
 
-<body>
+<body class="welly-red">
 <div class="parallax-container">
-	<div class="parallax"><img src="assets/wellydoingthings/group.jpg">
+	<div class="parallax"><img src="/assets/wellydoingthings/group.jpg">
 	</div>
 </div>
   
@@ -41,13 +41,13 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 </div>
 
 <div class="parallax-container">
-	<div class="parallax"><img src="assets/wellydoingthings/snow.jpg">
+	<div class="parallax"><img src="/assets/wellydoingthings/snow.jpg">
 	</div>
 </div>
 
 
-<footer class="page-footer green darken-2">
-	<div class="container ">
+<footer class="page-footer welly-blue">
+	<div class="container">
 		<div class="row">
 			<div class="col l6 s12">
 				<h5 class="white-text">Footer Content</h5>
