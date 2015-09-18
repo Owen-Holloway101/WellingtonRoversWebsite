@@ -1,0 +1,5 @@
+test
+
+*.private.php
+
+core/password_compat/**
