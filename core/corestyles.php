@@ -24,6 +24,16 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
 
 	<!--Overrides for the styles-->
 	<link rel="stylesheet" type="text/css" href="/core/styles.css"/>
+
+	<?php
+	
+	if (isMobile()) {
+		echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"/core/mobile.css\"/>";
+	} else {
+		echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"/core/desktop.css\"/>";
+	}
+	
+	?>
 </head>
 
 <body>

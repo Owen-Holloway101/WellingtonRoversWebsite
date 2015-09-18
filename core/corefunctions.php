@@ -129,7 +129,7 @@ function checkSalt($user, $pass) {
 	require $_SERVER['DOCUMENT_ROOT']."/core/db.php";
 
 	//This is only needed for php <5.5
-	require $_SERVER['DOCUMENT_ROOT'].'/core/password_compat-master/lib/password.php';
+	require $_SERVER['DOCUMENT_ROOT'].'/core/password_compat/lib/password.php';
 	
 
 	$sPassFound = False;
@@ -181,7 +181,7 @@ function insertNewUser($user, $pass) {
 	require $_SERVER['DOCUMENT_ROOT']."/core/db.php";
 
 	//This is only needed for php <5.5
-	require $_SERVER['DOCUMENT_ROOT'].'/core/password_compat-master/lib/password.php';
+	require $_SERVER['DOCUMENT_ROOT'].'/core/password_compat/lib/password.php';
 
 	$options = array('cost' => 11);
 	$passHash = password_hash($pass, PASSWORD_BCRYPT, $options);
@@ -206,7 +206,7 @@ function updateUserPass($user, $pass) {
 	require $_SERVER['DOCUMENT_ROOT']."/core/db.php";
 
 	//This is only needed for php <5.5
-	require $_SERVER['DOCUMENT_ROOT'].'/core/password_compat-master/lib/password.php';
+	require $_SERVER['DOCUMENT_ROOT'].'/core/password_compat/lib/password.php';
 
 	$options = array('cost' => 11);
 	$passHash = password_hash($pass, PASSWORD_BCRYPT, $options);
@@ -298,6 +298,20 @@ if (isset($_COOKIE['session'])) {
 	//In this case the user is not logged in
 	$userName = "null";
 	$userPermission = 0;
+}
+
+/*
+Checks if the device mobile or desktop
+*/
+
+function isMobile() {
+	require $_SERVER['DOCUMENT_ROOT'].'/core/mobile-detect/Mobile_Detect.php';
+	$detect = new Mobile_Detect;
+	if ($detect->isMobile()) {
+		return true;
+	} else  {
+		return false;
+	}
 }
 
 ?>
