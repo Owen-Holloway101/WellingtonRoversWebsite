@@ -16,33 +16,40 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 
 <body class="welly-red">
 <div class="parallax-container">
-	<div class="parallax"><img src="/assets/wellydoingthings/group.jpg">
-	</div>
+	<?php
+	if (isMobile()) {
+		echo "<div class=\"parallax\"><img src=\"/assets/wellydoingthings_mobile/group.jpg\"></div>";
+	} else {
+		echo "<div class=\"parallax\"><img src=\"/assets/wellydoingthings/group.jpg\"></div>";
+	}
+	?>
 </div>
   
 <div class="section white">
 	<div class="row container">
-		<h2 class="header">Lorem ipsum</h2>
+		<h2 class="header">Wellington Rover Crew</h2>
 		<p class="grey-text text-darken-3 lighten-3">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et ipsum porttitor, mollis purus a, pellentesque turpis. Donec fringilla libero nec odio hendrerit, non fringilla tortor viverra. Aenean accumsan eros id mauris mollis porta. Maecenas ac nulla vitae turpis consequat volutpat. Integer quis dui tristique, sollicitudin nulla a, porttitor nisl. Cras risus eros, vehicula id pellentesque et, semper ac quam. Donec luctus ultrices enim congue commodo. Aenean molestie convallis risus vel dapibus. Phasellus laoreet tristique tempor.
+		Welcome to the Wellington Rover Crew home page.<br>
+		<br>
+		Wellington Rovers are one of the two Rover Crews located in the Wellington District in Southern Tasmania. We are situated down at the 10th Hobart Scout Hall on the Marieville Esplanade, Battery Point backing on to the Derwent Estuary (near the playground).
 		<br>
 		<br>
-		Nunc imperdiet finibus leo, in convallis ex lacinia quis. Morbi viverra eros eu turpis bibendum, quis porttitor nibh dictum. Quisque sagittis elit vel ultricies gravida. Curabitur eget vehicula massa. Vestibulum dignissim nec velit et suscipit. Integer sagittis quis nisi sit amet ultricies. Morbi quis enim mollis risus semper feugiat eu in nisl. Nullam lacinia id libero luctus molestie. Vivamus elit risus, sollicitudin vel euismod nec, auctor quis nunc. Vivamus fermentum, enim a interdum sollicitudin, risus dolor auctor sapien, non consectetur ante turpis sed mi. Quisque ut aliquam mi, vel volutpat elit. Pellentesque ac nunc vel quam ultrices aliquet vel ac odio. Ut luctus eros eget vestibulum convallis. Maecenas at urna vel massa lobortis volutpat in vitae turpis.
+		We currently meet every Thursday between 8pm and 10pm although we do occasionally go over this timeframe. Our program is active with various activities to situate all Rovers and newcomers. 
 		<br>
 		<br>
-		Mauris mattis dui nisl, a interdum arcu ultrices in. Proin luctus neque vulputate, hendrerit lacus eu, condimentum odio. Proin eu libero mauris. Etiam euismod nec risus nec facilisis. Morbi lacinia mattis consequat. Pellentesque quis gravida tortor. Nulla facilisi. Proin mollis risus eu arcu mattis, sit amet suscipit sapien pellentesque. Nulla risus mauris, maximus vel rhoncus quis, varius quis felis.
+		What we do: ANZAC Day, rockclimbing, cocktail parties, iceblocking, bushwalking, camping, rafting, movie nights, abseiling, poker and casino nights, pub nights, Clean Up Australia day, four wheel driving, salsa dancing, bike rides, cooking, campcraft, swimming, moots (state, national and international Rover gatherings), costume parties, beach walks ...... whatever you want really, if you want to do, then we can do it...to a certain degree, that is.
 		<br>
-		<br>
-		Praesent nec ullamcorper odio, sit amet interdum elit. Vivamus quis libero eros. Phasellus eu diam ullamcorper, placerat lectus id, faucibus mi. Curabitur non leo purus. Aenean placerat nulla sit amet sem varius dapibus. Curabitur et mattis justo. Morbi fringilla lorem magna, nec bibendum massa finibus ac. Nunc vitae lectus ut neque lacinia pulvinar. Vivamus condimentum lorem mi, non pellentesque ipsum vulputate ac. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-		<br>
-		<br>
-		Curabitur ullamcorper ipsum vitae orci pretium, sit amet accumsan mi dictum. Etiam est tellus, consequat a iaculis eget, aliquet in erat. Donec vel lorem dolor. Quisque mollis quam leo, at vehicula felis commodo aliquet. Ut convallis nulla magna, eu pellentesque urna mollis eget. Pellentesque nec justo fringilla, pulvinar tellus eget, dignissim urna. Vestibulum sed aliquam purus, vel fermentum ipsum. Vivamus consectetur efficitur nisl. Quisque congue metus aliquam egestas placerat. Maecenas dignissim volutpat fermentum. Nulla ut orci eros. Nam posuere facilisis magna. Etiam nec lorem at quam semper efficitur. In a venenatis neque. Etiam quis ipsum et eros laoreet ullamcorper. </p>
-	</div>
+		</div>
 </div>
 
 <div class="parallax-container">
-	<div class="parallax"><img src="/assets/wellydoingthings/snow.jpg">
-	</div>
+	<?php
+	if (isMobile()) {
+		echo "<div class=\"parallax\"><img src=\"/assets/wellydoingthings_mobile/snow.jpg\"></div>";
+	} else {
+		echo "<div class=\"parallax\"><img src=\"/assets/wellydoingthings/snow.jpg\"></div>";
+	}
+	?>
 </div>
 
 
@@ -67,7 +74,6 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 	<div class="footer-copyright">
 		<div class="container">
 		© 2015 Wellington Rover Crew
-		<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
 		</div>
 	</div>
 </footer>

@@ -305,7 +305,7 @@ Checks if the device mobile or desktop
 */
 
 function isMobile() {
-	require $_SERVER['DOCUMENT_ROOT'].'/core/mobile-detect/Mobile_Detect.php';
+	require_once $_SERVER['DOCUMENT_ROOT'].'/core/mobile-detect/Mobile_Detect.php';
 	$detect = new Mobile_Detect;
 	if ($detect->isMobile()) {
 		return true;

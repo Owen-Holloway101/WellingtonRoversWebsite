@@ -16,8 +16,13 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 
 <body class="welly-red">
 <div class="parallax-container">
-	<div class="parallax"><img src="/assets/wellydoingthings/boat.jpg">
-	</div>
+	<?php
+	if (isMobile()) {
+		echo "<div class=\"parallax\"><img src=\"/assets/wellydoingthings_mobile/boat.jpg\"></div>";
+	} else {
+		echo "<div class=\"parallax\"><img src=\"/assets/wellydoingthings/boat.jpg\"></div>";
+	}
+	?>
 </div>
   
 <div class="section white">
@@ -27,8 +32,13 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 </div>
 
 <div class="parallax-container">
-	<div class="parallax"><img src="/assets/wellydoingthings/walk.jpg">
-	</div>
+	<?php
+	if (isMobile()) {
+		echo "<div class=\"parallax\"><img src=\"/assets/wellydoingthings_mobile/walk.jpg\"></div>";
+	} else {
+		echo "<div class=\"parallax\"><img src=\"/assets/wellydoingthings/walk.jpg\"></div>";
+	}
+	?>
 </div>
 
 

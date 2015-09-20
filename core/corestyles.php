@@ -2,7 +2,7 @@
 //Lets make sure that we can use all the functions
 require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
 ?>
-<!--Owen Holloway @Zeryter 2015-->
+<!--Owen Holloway Wellington Rover Crew 2015-->
 <head>
 	<!--Love me some good jquery-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -25,6 +25,8 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
 	<!--Overrides for the styles-->
 	<link rel="stylesheet" type="text/css" href="/core/styles.css"/>
 
+	<!--We use UTF-8 here-->
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<?php
 	
 	if (isMobile()) {
