@@ -321,7 +321,6 @@ function isMobile() {
 		/*
 		Gets a cookie because the inbuilt method annoys me
 		*/
-		
 		function getCookie(cname) {
 			var name = cname + "=";
 			var ca = document.cookie.split(';');
@@ -336,7 +335,6 @@ function isMobile() {
 		/*
 		Sets the last page cookie, this is useful for post login etc
 		*/
-	
 		function setPage(pageFile) {
 			var expDate = new Date();
 			expDate.setTime(expDate.getTime()+(60*15));

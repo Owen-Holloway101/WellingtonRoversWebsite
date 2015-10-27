@@ -45,12 +45,14 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
 			<ul class="right hide-on-med-and-down">
 				<li><a href="/">Home</a></li>
 				<li><a href="/calendar">Calendar</a></li>
+				<li><a href="/links">Links</a></li>
 				<li><a href="/user">User <?php  if ($userName == "null") echo ""; else echo "(".$userName.")";?></a></li>
 			</ul>
 
 			<ul id="nav-mobile" class="side-nav">
 				<li><a href="/">Home</a></li>
 				<li><a href="/calendar">Calendar</a></li>
+				<li><a href="/links">Links</a></li>
 				<li><a href="/user">User <?php  if ($userName == "null") echo ""; else echo "(".$userName.")";?></a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -71,4 +73,5 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
 			});
 		</script>
 	</nav>
+
 </body>
