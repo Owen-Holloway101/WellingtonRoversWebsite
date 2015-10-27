@@ -316,29 +316,27 @@ function isMobile() {
 
 ?>
 
-<head>
-	<script type="text/javascript">
-		/*
-		Gets a cookie because the inbuilt method annoys me
-		*/
-		function getCookie(cname) {
-			var name = cname + "=";
-			var ca = document.cookie.split(';');
-			for(var i=0; i<ca.length; i++) {
-				var c = ca[i];
-				while (c.charAt(0)==' ') c = c.substring(1);
-				if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
-			}
-			return "";
+<script type="text/javascript">
+	/*
+	Gets a cookie because the inbuilt method annoys me
+	*/
+	function getCookie(cname) {
+		var name = cname + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0; i<ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1);
+			if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
 		}
-		
-		/*
-		Sets the last page cookie, this is useful for post login etc
-		*/
-		function setPage(pageFile) {
-			var expDate = new Date();
-			expDate.setTime(expDate.getTime()+(60*15));
-			document.cookie="page=" + pageFile + ";" + expDate + "; path=/";
-		}
-	</script>
-</head>
+		return "";
+	}
+
+	/*
+	Sets the last page cookie, this is useful for post login etc
+	*/
+	function setPage(pageFile) {
+		var expDate = new Date();
+		expDate.setTime(expDate.getTime()+(60*15));
+		document.cookie="page=" + pageFile + ";" + expDate + "; path=/";
+	}
+</script>
