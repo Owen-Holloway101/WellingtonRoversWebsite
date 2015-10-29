@@ -5,7 +5,7 @@
   * Crew history
   * Log books (reports)
   * News
-  * Calendar c/ events
+  * [done] Calendar & events
   * Visible Photos
 
 * Non-Public (Log in area for crew members)
