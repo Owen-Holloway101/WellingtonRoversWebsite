@@ -14,6 +14,8 @@
   * Trouser Snake
   * Welly Old Fart
   * Old Fart Email
+  * Moot sites
+  * Marquee info (possibly public)
 
 ==========================================<br>
 
