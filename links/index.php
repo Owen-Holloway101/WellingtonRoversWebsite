@@ -38,11 +38,9 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 				<a href="http://www.tas.myscout.com.au">Tas MyScout</a><br>
 				<a href="http://www.facebook.com/WellingtonRovers">Facebook</a>
 				<a href="http://tasrovers.com/mailman/listinfo/wellylist_tasrovers.com">Wellylist</a>
-			</div>
 			<?php
 			if (false) {
-				echo "<div class\"col l5 offset-l2 s12\">
-						<u>Private Links</u><br>
+				echo "<u>Private Links</u><br>
 						<a href=\"#\">Example private link 1</a><br>
 						<a href=\"#\">Example private link 2</a><br>
 						<a href=\"#\">Example private link 3</a><br>
