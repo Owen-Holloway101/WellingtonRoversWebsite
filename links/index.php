@@ -44,10 +44,10 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 						<a href=\"#\">Example private link 1</a><br>
 						<a href=\"#\">Example private link 2</a><br>
 						<a href=\"#\">Example private link 3</a><br>
-						<a href=\"#\">Example private link 4</a><br>
-					 </div>";
+						<a href=\"#\">Example private link 4</a><br>";
 			}
 			?>
+			</div>
 		</div>
 </div>
 
