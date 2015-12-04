@@ -290,6 +290,9 @@ function generateSessionID() {
 	return $randomString;
 }
 
+//Set timezone
+date_default_timezone_set('Australia/Tasmania');
+
 //Check the session
 if (isset($_COOKIE['session'])) {
 	$userName = getUserName($_COOKIE["session"]);
