@@ -40,7 +40,7 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 				<a href="http://tasrovers.com/mailman/listinfo/wellylist_tasrovers.com">Wellylist</a>
 			</div>
 			<?php
-			if (true) {
+			if (false) {
 				echo "<div class\"col l5 offset-l2 s12\">
 						<u>Private Links</u><br>
 						<a href=\"#\">Example private link 1</a><br>
