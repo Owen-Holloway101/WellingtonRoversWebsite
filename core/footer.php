@@ -16,7 +16,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/corestyles.php';
 					<p class="grey-text text-lighten-4"></p>
 				</div>
 				<div class="col l4 offset-l2 s12">
-					<h5 class="white-text"><!--Links--></h5>
+					<h5 class="white-text">Hear from us</h5>
 					<ul>
 					<li><a class="grey-text text-lighten-3" href="http://tasrovers.com/mailman/listinfo/wellylist_tasrovers.com">Wellylist</a></li>
 					</ul>
