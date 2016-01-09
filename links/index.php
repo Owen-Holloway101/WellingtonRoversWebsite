@@ -36,18 +36,22 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 				<a href="http://www.tas.scouts.com.au">Scout Tasmania</a><br>
 				<a href="http://www.tasrovers.com">Tasmanian Rovers</a><br>
 				<a href="http://www.tas.myscout.com.au">Tas MyScout</a><br>
-				<a href="http://www.facebook.com/WellingtonRovers">Facebook</a>
+				<a href="http://www.facebook.com/WellingtonRovers">Facebook</a><br>
 				<a href="http://tasrovers.com/mailman/listinfo/wellylist_tasrovers.com">Wellylist</a>
 			<?php
 			if ($userPermission > 10) {
 				echo "
 					<br>
 					<br>
-					<u>Private Links</u><br>
-						<a href=\"#\">Example private link 1</a><br>
-						<a href=\"#\">Example private link 2</a><br>
-						<a href=\"#\">Example private link 3</a><br>
-						<a href=\"#\">Example private link 4</a><br>";
+					<u>Private Links</u><br>";
+				$myLinksDescriptor = array();
+				$myLinksDescriptor = getPrivateLinksDescriptor();
+				$myLinksUrl = array();
+				$myLinksUrl = getPrivateLinksUrl();
+				for ($i=0; $i < count($myLinksDescriptor); $i++) {
+					echo "<a href=\"".$myLinksUrl[$i]."\">".$myLinksDescriptor[$i]."</a>";
+					echo "<br>";
+				}
 			}
 			?>
 			</div>

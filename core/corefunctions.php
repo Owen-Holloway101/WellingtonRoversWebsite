@@ -290,6 +290,77 @@ function generateSessionID() {
 	return $randomString;
 }
 
+/*
+Inserts new private link into db
+*/
+
+function insertnewlink($descriptor,$url) {
+	//Prepared statements make sure that we don't fail and have sql injection ...
+	$stmt = $db->prepare("INSERT INTO `LINKS` (DESCRIPTOR, URL) VALUES (?,?)");
+
+	$stmt->bind_param("ss",$descriptor,$url);
+
+	$stmt->execute();
+
+	$stmt->close();
+}
+
+function getPrivateLinksDescriptor() {
+
+	require $_SERVER['DOCUMENT_ROOT']."/core/db.php";
+
+	$links = array();
+
+	$query = "SELECT * FROM LINKS";
+
+	if ($stmt = $db->prepare($query)) {
+
+		/* execute statement */
+		$stmt->execute();
+
+		/* bind result variables */
+		$stmt->bind_result($no,$descriptor_fetched,$url_fetched);
+
+		/* fetch values */
+		while ($stmt->fetch()) {
+			array_push($links, $descriptor_fetched);
+		}
+	}
+
+	/* close statement */
+	$stmt->close();
+
+	return $links;
+}
+
+function getPrivateLinksUrl() {
+
+	require $_SERVER['DOCUMENT_ROOT']."/core/db.php";
+
+	$links = array();
+
+	$query = "SELECT * FROM LINKS";
+
+	if ($stmt = $db->prepare($query)) {
+
+		/* execute statement */
+		$stmt->execute();
+
+		/* bind result variables */
+		$stmt->bind_result($no,$descriptor_fetched,$url_fetched);
+
+		/* fetch values */
+		while ($stmt->fetch()) {
+			array_push($links, $url_fetched);
+		}
+	}
+
+	/* close statement */
+	$stmt->close();
+
+	return $links;
+}
+
 //Set timezone
 date_default_timezone_set('Australia/Tasmania');
 

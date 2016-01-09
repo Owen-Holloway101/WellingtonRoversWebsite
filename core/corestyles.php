@@ -53,7 +53,7 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
 				<li><a href="/">Home</a></li>
 				<li><a href="/calendar">Calendar</a></li>
 				<li><a href="/links">Links</a></li>
-				<li><a href="/user">User <?php  if ($userName == "null") echo ""; else echo "(".$userName.")";?></a></li>
+				<li><a href="/user"><?php  if ($userName == "null") echo "Login"; else echo "User (".$userName.")";?></a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 		</div>
