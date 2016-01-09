@@ -18,9 +18,9 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 <div class="parallax-container">
 	<?php
 	if (isMobile()) {
-		echo "<div class=\"parallax\"><img src=\"/assets/wellydoingthings_mobile/joinwelly.jpg\"></div>";
+		echo "<div class=\"parallax\"><img src=\"/assets/wellydoingthings_mobile/chalkshield.jpg\"></div>";
 	} else {
-		echo "<div class=\"parallax\"><img src=\"/assets/wellydoingthings/joinwelly.jpg\"></div>";
+		echo "<div class=\"parallax\"><img src=\"/assets/wellydoingthings/chalkshield.jpg\"></div>";
 	}
 	?>
 </div>
