@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 //inits the variable $db with the connection to the server for query
 require_once $_SERVER["DOCUMENT_ROOT"].'/core/settings.private.php';
 
