@@ -48,7 +48,7 @@ if($userName == "null") {
 				</div>
 				<div class=\"card-action\">
 					<a href=\"/core/logout.php\">Logout</a>
-					<a href=\"#\">Change Pass</a>
+					<!--<a href=\"#\">Change Pass</a>-->
 				</div>
 			</div>
 		</div>
@@ -59,5 +59,5 @@ if($userName == "null") {
 ?>
 
 <head>
-	<title>User</title>
+	<title>Welly - User</title>
 </head>
