@@ -46,7 +46,7 @@ if($userName == "null") {
 ?>
 
 <head>
-	<title>New User</title>
+	<title>Welly - New User</title>
 	<script type="text/javascript">
 	function submitForm () {
 			var username = $("input[name=username]").val();

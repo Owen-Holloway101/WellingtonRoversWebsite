@@ -11,7 +11,7 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 ?>
 
 <head>
-	<title>Welly - Home</title>
+	<title>Welly - Links</title>
 </head>
 
 <body class="welly-red">

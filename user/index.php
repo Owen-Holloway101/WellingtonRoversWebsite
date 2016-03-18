@@ -59,5 +59,5 @@ if($userName == "null") {
 ?>
 
 <head>
-	<title>User</title>
+	<title>Welly - User</title>
 </head>
