@@ -1,21 +1,31 @@
 #Work in progress
 #TODO
 * Public
-  * Crew info – contacts
+  * [done] Crew info – contacts
   * Crew history
   * Log books (reports)
   * News
   * [done] Calendar & events
-  * Visible Photos
+  * [done][partially]Visible Photos
 
 * Non-Public (Log in area for crew members)
-  * Specific documents (Squire Training, Constitution)
-  * Non-Public Photos
+  * [done] Specific documents (Squire Training, Constitution)
+  * [done] Non-Public Photos
   * Trouser Snake
   * Welly Old Fart
   * Old Fart Email
-  * Moot sites
+  * [done] Moot sites
   * Marquee info (possibly public)
+  * Treasurer Utilities
+    * Invoices
+        * Numbered
+        * Payees
+        * Owing
+    * Transactions
+        * Export
+        * Import
+        * ??Crew visable??
+        
 
 ==========================================<br>
 
