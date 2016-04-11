@@ -1,14 +1,13 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 //Code for sending an email.
 
-function sendEmail($item,$price,$name,$email) {
+function sendInvoiceEmail($item,$price,$invno,$senddate,$duedate,$name,$email) {
 
 $amountofitems = count($item);
 $totalPrice = 0;
 $items = "";
+
+
  
 for ($x = 0; $x < $amountofitems; $x++) {
     $items .= "
@@ -17,7 +16,7 @@ for ($x = 0; $x < $amountofitems; $x++) {
         ".$item[$x]."
     </td>        
     <td style=\"text-align: right;\">
-        $".$price[$x]."
+        $".number_format($price[$x], 2)."
     </td>
 </tr>";
 
@@ -31,7 +30,7 @@ $itemsum="
         Total:
     </td>        
     <td style=\"text-align: right;\">
-        $".$totalPrice."
+        $".number_format($totalPrice,2)."
     </td>
 </tr>";
 
@@ -69,7 +68,7 @@ $message="<!doctype html>
                             </td>
                             
                             <td style=\"text-align: right;\">
-                                Invoice #: 123<br>
+                                Invoice #".$invno."<br>
                                 Created: January 1, 2015<br>
                                 Due: February 1, 2015
                             </td>
@@ -129,7 +128,7 @@ $message="<!doctype html>
                     Name: Wellington Rover Crew<br>
                     BSB:037001<br>
                     Account:433819<br>
-                    Reference:INV#<br>
+                    Reference:INV ".$invno."<br>
                 </td>
                 <td style=\"text-align: right;\">
                     <u>Other Methods</u><br>
@@ -137,7 +136,7 @@ $message="<!doctype html>
                 </td>
             </tr>
             <tr style=\"border-bottom:1px solid #eee; width: 100%;\">
-            	<td style=\"width: 100%;\">
+            	<td colspan=\"2\">
             	Please pay within 30 days of receiving this invoice. If you have issues paying please email me (the Wellington treasurer) at:   
          		<a href=\"mailto:owen.holloway101@gmail.com?Subject=[Wellington Treasurer]%20\" target=\"_top\">owen.holloway101@gmail.com</a>
             	</td>
@@ -158,11 +157,11 @@ $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $headers .= 'From: Wellington Rovers <test@zeryter.moooo.com>' . "\r\n";
 $headers .= "Reply-To: wellington.rovers@gmail.com \r\n";
 
-mail($to, $subject, $message, $headers);
+mail($to, $subject,$message, $headers);
 
 }
 
-sendEmail(array("item1","items2"),array(20,10),"Owen Holloway","owen.holloway101@gmail.com");
-echo "email sent";
+//sendInvoiceEmail(array("item1","item2","item3"),array(20.00,10.00,5.20),20,0,0,"Owen Holloway","owen.holloway101@gmail.com");
+//echo "email sent";
 
 ?>
