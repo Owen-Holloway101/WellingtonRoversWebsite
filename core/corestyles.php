@@ -40,21 +40,33 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
 
 <body>
 	<!--Navigation-->
+    <!--Dropdowns START-->
+    <ul id="treasurer_dropdown" class="dropdown-content">
+        <li><a href="/treasurer">Overview</a></li>
+        <li class="divider"></li>
+        <li><a href="/treasurer/invoices.php">Invoices</a></li>
+        <li><a href="/treasurer/newinvoice.php">New Invoice</a></li>
+        <li class="divider"></li>
+        <li><a href="/treasurer/payees.php">Payees</a></li>
+        <li><a href="/treasurer/newpayee.php">New Payee</a></li>
+    </ul>
+    <!--Dropdowns END-->
 	<nav class="grey darken-3" role="navigation">
 		<div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Wellington Rovers</a>
+            <!--NAV Bar START-->
 			<ul class="right hide-on-med-and-down">
 				<li><a href="/">Home</a></li>
 				<li><a href="/calendar">Calendar</a></li>
 				<li><a href="/links">Links</a></li>
-                <?php if($userPermission == 50) { echo "<li><a href=\"/treasurer\">Treasurer</a></li>";} ?>
+                <?php if($userPermission == 50) { echo "<li><a class=\"dropdown-button\" href=\"#!\" data-activates=\"treasurer_dropdown\">Treasurer<i class=\"material-icons right\">arrow_drop_down</i></a></li>";} ?>
 				<li><a href="/user"><?php  if ($userName == "null") echo "Login"; else echo "User (".$userName.")";?></a></li>
 			</ul>
-
+            <!--NAV Bar END-->
 			<ul id="nav-mobile" class="side-nav">
 				<li><a href="/">Home</a></li>
 				<li><a href="/calendar">Calendar</a></li>
 				<li><a href="/links">Links</a></li>
-                <?php if($userPermission == 50) { echo "<li><a href=\"/treasurer\">Treasurer</a></li>";} ?>
+                <!--TODO add treasurer drop down-->
 				<li><a href="/user"><?php  if ($userName == "null") echo "Login"; else echo "User (".$userName.")";?></a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -73,6 +85,10 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
 			$(document).ready(function(){
 				$('.parallax').parallax();
 			});
+            
+            $(document).ready(function() {
+                $('select').material_select();
+            });   
 		</script>
 	</nav>
 

@@ -3,7 +3,7 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/core/corestyles.php';
 ?>
 
 <head>
-	<title>@Zeryter - error</title>
+	<title>Welly - Error</title>
 </head>
 
 <body>

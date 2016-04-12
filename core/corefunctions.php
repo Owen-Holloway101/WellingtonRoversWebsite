@@ -266,9 +266,7 @@ function setSession($user, $sessionID) {
 	setcookie("session",$sessionID,time()+1209600,"/");
 
 	//also check for any expired sessions
-
 	//Prepared statements make sure that we don't fail and have sql injection ...
-	
 	$stmt = $db->prepare("DELETE FROM SESSION WHERE TIMESTAMPDIFF(HOUR,TIMECREATED,NOW())>336"); //this should check if the session was made more than 2 weeks ago
 
 	$stmt->execute();
