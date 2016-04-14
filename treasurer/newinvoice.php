@@ -25,32 +25,33 @@ if($userPermission == 50) {
         <div class="row container">
             <form class="col s12" action="/core/addpayee.php" id="payee" method="post">
                 <div class="row">
+                    <!--Payees-->
                     <div class="input-field col s12">
                         <select>
                             <option value="" disabled selected>Select Payee</option>
-                        <?php
+                            <?php
 
-                            require $_SERVER['DOCUMENT_ROOT']."/core/db.php";
+                                require $_SERVER['DOCUMENT_ROOT']."/core/db.php";
 
-                            $query = "SELECT * FROM payee";
+                                $query = "SELECT * FROM payee";
 
-                            if ($stmt = $db->prepare($query)) {
+                                if ($stmt = $db->prepare($query)) {
 
-                                /* execute statement */
-                                $stmt->execute();
+                                    /* execute statement */
+                                    $stmt->execute();
 
-                                /* bind result variables */
-                                $stmt->bind_result($payeeno,$firstname,$lastname,$email,$credit);
+                                    /* bind result variables */
+                                    $stmt->bind_result($payeeno,$firstname,$lastname,$email,$credit);
 
-                                /* fetch values */
-                                while ($stmt->fetch()) {
-                                    echo "<option value=".$payeeno.">".$firstname." ".$lastname."</option>";
+                                    /* fetch values */
+                                    while ($stmt->fetch()) {
+                                        echo "<option value=".$payeeno.">".$firstname." ".$lastname."</option>";
+                                    }
                                 }
-                            }
 
-                            /* close statement */
-                            $stmt->close();
-                        ?>
+                                /* close statement */
+                                $stmt->close();
+                            ?>
                         </select>
                         <label>Payee</label>
                     </div>

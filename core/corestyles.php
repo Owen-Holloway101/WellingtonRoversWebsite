@@ -6,6 +6,8 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
 <head>
 	<!--Love me some good jquery-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <script type="text/javascript" src="http://malsup.github.com/jquery.form.js"></script> 
 	
 	<!-- Compiled and minified CSS -->
 	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css" media="screen,projection">
@@ -48,7 +50,6 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
         <li><a href="/treasurer/newinvoice.php">New Invoice</a></li>
         <li class="divider"></li>
         <li><a href="/treasurer/payees.php">Payees</a></li>
-        <li><a href="/treasurer/newpayee.php">New Payee</a></li>
     </ul>
     <!--Dropdowns END-->
 	<nav class="grey darken-3" role="navigation">
@@ -67,6 +68,23 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
 				<li><a href="/calendar">Calendar</a></li>
 				<li><a href="/links">Links</a></li>
                 <!--TODO add treasurer drop down-->
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">Treasurer<i class="mdi-navigation-arrow-drop-down"></i></a>
+                        <div class="collapsible-body">
+                        <ul>
+                            <li><a href="/treasurer">Overview</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/treasurer/invoices.php">Invoices</a></li>
+                            <li><a href="/treasurer/newinvoice.php">New Invoice</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/treasurer/payees.php">Payees</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    </ul>
+                </li>
 				<li><a href="/user"><?php  if ($userName == "null") echo "Login"; else echo "User (".$userName.")";?></a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -88,7 +106,12 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corefunctions.php";
             
             $(document).ready(function() {
                 $('select').material_select();
-            });   
+            });  
+            
+            $(document).ready(function(){
+                // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+                $('.modal-trigger').leanModal();
+            });
 		</script>
 	</nav>
 

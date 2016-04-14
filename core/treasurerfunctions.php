@@ -15,6 +15,18 @@ function newpayee($firstname,$lastname,$email) {
 	$stmt->close();
 }
 
+function updatepayee($payeeno,$firstname,$lastname,$email) {
+    require $_SERVER['DOCUMENT_ROOT']."/core/db.php";
+    
+	$stmt = $db->prepare("UPDATE payee SET firstname=?,lastname=?,email=? WHERE payeeno=?");
+
+	$stmt->bind_param("sssi",$firstname,$lastname,$email,$payeeno);
+
+	$stmt->execute();
+
+	$stmt->close();
+}
+
 function getpayeeno() {
     require $_SERVER['DOCUMENT_ROOT']."/core/db.php";
 

@@ -26,8 +26,8 @@ if($userPermission == 50) {
         <table class="striped">
             <thead>
                 <tr>
-                    <th data-field="name">Invoice</th>
-                    <th data-field="id">Payee</th>
+                    <th data-field="id">Invoice</th>
+                    <th data-field="name">Payee</th>
                     <th data-field="price">Total</th><!--TODO rename-->
                     <th data-field="date">Due By</th>
                     <th data-field="price">Outstanding</th>
@@ -51,6 +51,8 @@ if($userPermission == 50) {
                 ?>
             </tbody>
         </table>
+        <!-- Modal Trigger -->
+        <a class="modal-trigger waves-effect waves-light btn" href="#newpayee">New Invoice</a>
         </div>
     </div>
     
