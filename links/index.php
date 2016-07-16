@@ -29,15 +29,15 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 	<div class="row container">
 		<h2 class="header">Links</h2>
 		<p class="grey-text text-darken-3 lighten-3 s12">
-			<div class="col l5 s12">
-				<u>Public Links</u><br>
-				<a href="http://www.scouts.com.au">Scouts Australia</a><br>
-				<a href="http://www.rovers.com.au">Rovers Australia</a><br>
-				<a href="http://www.tas.scouts.com.au">Scout Tasmania</a><br>
-				<a href="http://www.tasrovers.com">Tasmanian Rovers</a><br>
-				<a href="http://www.tas.myscout.com.au">Tas MyScout</a><br>
-				<a href="http://www.facebook.com/WellingtonRovers">Facebook</a><br>
-				<a href="http://tasrovers.com/mailman/listinfo/wellylist_tasrovers.com">Wellylist</a>
+			<div class="collection col l5 s12">
+				<!--<u>Public Links</u><br>-->
+				<a class="collection-item" href="http://www.scouts.com.au">Scouts Australia</a>
+				<a class="collection-item" href="http://www.rovers.com.au">Rovers Australia</a>
+				<a class="collection-item" href="http://www.tas.scouts.com.au">Scout Tasmania</a>
+				<a class="collection-item" href="http://www.tasrovers.com">Tasmanian Rovers</a>
+				<a class="collection-item" href="http://www.tas.myscout.com.au">Tas MyScout</a>
+				<a class="collection-item" href="http://www.facebook.com/WellingtonRovers">Facebook</a>
+				<a class="collection-item" href="http://tasrovers.com/mailman/listinfo/wellylist_tasrovers.com">Wellylist</a>
 			<?php
 			if ($userPermission > 10) {
 				echo "
@@ -49,8 +49,8 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 				$myLinksUrl = array();
 				$myLinksUrl = getPrivateLinksUrl();
 				for ($i=0; $i < count($myLinksDescriptor); $i++) {
-					echo "<a href=\"".$myLinksUrl[$i]."\">".$myLinksDescriptor[$i]."</a>";
-					echo "<br>";
+					echo "<a class=\"collection-item\" href=\"".$myLinksUrl[$i]."\">".$myLinksDescriptor[$i]."</a>";
+					echo "";
 				}
 			}
 			?>
