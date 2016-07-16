@@ -40,10 +40,7 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/core/corestyles.php";
 				<a class="collection-item" href="http://tasrovers.com/mailman/listinfo/wellylist_tasrovers.com">Wellylist</a>
 			<?php
 			if ($userPermission > 10) {
-				echo "
-					<br>
-					<br>
-					<u>Private Links</u><br>";
+				echo "";
 				$myLinksDescriptor = array();
 				$myLinksDescriptor = getPrivateLinksDescriptor();
 				$myLinksUrl = array();
